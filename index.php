@@ -47,7 +47,7 @@ if(isset($_GET['accepte-cookie'])){
       </section>
       <section>
        <div class="paiements">
-        <h1>TOUS PAIEMENTS ACCEPTES <i class="fa-sharp fa-solid fa-credit-card"></i>  <i class="fa-brands fa-cc-visa"></i>   <i class="fa-brands fa-cc-mastercard"></i> <i class="fa-sharp fa-solid fa-coins"></i> <i class="fa-solid fa-money-bill-1"></i>  </h1>
+        <h1>TOUS PAIEMENTS ACCEPTES <i class="fa-sharp fa-solid fa-credit-card"></i>  <i class="fa-brands fa-cc-visa"></i><i class="fa-brands fa-cc-mastercard"></i> <i class="fa-sharp fa-solid fa-coins"></i> <i class="fa-solid fa-money-bill-1"></i>  </h1>
        </div>
       </section>
       </body>
@@ -75,7 +75,7 @@ if(isset($_GET['accepte-cookie'])){
           </div>
           <div class="bloc -logo">
             <a href="index.php"><span>Clean</span>lav'</a>
-            <h4><i class="fa-sharp fa-solid fa-location-dot"></i> 31 PLACE DES 4 SAISONS <br>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  27100 VAL DE REUIL <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 07_67_74_06_52</h4>
+            <h4><i class="fa-sharp fa-solid fa-location-dot"></i> 31 PLACE DES 4 SAISONS <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  27100 VAL DE REUIL <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 07_67_74_06_52</h4>
           </div>
         </div>
         <p>Réaliser par  Mr&nbsp;.MAB dev | Copyright © Cleanlav' 2023 .</p>
