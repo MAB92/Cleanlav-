@@ -26,9 +26,10 @@
         <a href="index.php"><span>Clean</span>lav'</a>
       </div> 
       <ul class="menu">
-      <li><a href="index.php">ACCUEIL</a></li>
-        <li><a href="services et tarifs.php">SERVICES ET  TARIFS</a></li>
+        <li><a href="index.php">ACCUEIL</a></li>
+        <li><a href="services et tarifs.php">SERVICES ET TARIFS</a></li>
         <li><a href="fonctionnement.php">FONCTIONNEMENT</a></li>
+        <li><a href="location.php">LOCATION</a></li>
         <li><a href="contact.php">CONTACT</a></li>
         <li><a href="galerie.php">GALERIE</a></li>
         <li><a href="à-propos.php">À PROPOS</a></li>
@@ -38,7 +39,7 @@
       <div class="responsive-menu"></div>
    </header>
    <section id="contact">
-    <h1 class="title">S'inscrire:</h1>
+    <h1 class="title">S'inscrire :</h1>
     <form action="processus-d'inscription.php" method="post" id="inscription" novalidate>
         
         <div class="left-right">
@@ -58,8 +59,8 @@
 
           <div class="right">
             <p>Se connecter à Cleanlav :</p><br><br>
-            <button><i class="fa-brands fa-google"></i> S'inscrire avec Google <a href="index.php"></a></button><br>
-            <button><i class="fa-brands fa-facebook"></i> S'inscrire avec Facebook</button>
+            <button><i class="fa-brands fa-google"></i> S'inscrire avec Google <a href="index2.php"></a></button><br>
+            <button><i class="fa-brands fa-facebook"></i> S'inscrire avec Facebook <a href="index2.php"></a></button>
             
           </div>
       </div>
@@ -72,11 +73,12 @@
             <h5>LIENS RAPIDES</h5>
             <ul class="liens">
             <li><a href="index.php">ACCUEIL</a></li>
-        <li><a href="services et tarifs.php">SERVICES ET  TARIFS</a></li>
-        <li><a href="fonctionnement.php">FONCTIONNEMENT</a></li>
-        <li><a href="contact.php">CONTACT</a></li>
-        <li><a href="galerie.php">GALERIE</a></li>
-        <li><a href="à-propos.php">À PROPOS</a></li>
+            <li><a href="services et tarifs.php">SERVICES ET  TARIFS</a></li>
+            <li><a href="fonctionnement.php">FONCTIONNEMENT</a></li>
+            <li><a href="location.php">LOCATION</a></li>
+            <li><a href="contact.php">CONTACT</a></li>
+            <li><a href="galerie.php">GALERIE</a></li>
+            <li><a href="à-propos.php">À PROPOS</a></li>
             </ul>
           </div>
           <div class="bloc -media">

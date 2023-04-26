@@ -18,8 +18,9 @@
       </div> 
       <ul class="menu">
         <li><a href="index.php">ACCUEIL</a></li>
-        <li><a href="services et tarifs.php">SERVICES ET  TARIFS</a></li>
+        <li><a href="services et tarifs.php">SERVICES ET TARIFS</a></li>
         <li><a href="fonctionnement.php">FONCTIONNEMENT</a></li>
+        <li><a href="location.php">LOCATION</a></li>
         <li><a href="contact.php">CONTACT</a></li>
         <li><a href="galerie.php">GALERIE</a></li>
         <li><a href="à-propos.php">À PROPOS</a></li>
@@ -37,13 +38,13 @@
                <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
                  <i class="fa-solid fa-spray-can-sparkles"></i>
                    <h3>Propreté</h3>
-                   <p>La laverie et les machines sont nettoyées <br> quotidiennement</p>
+                   <p>La laverie et les machines sont nettoyées et désinfectées <br> quotidiennement avec des produits écologique</p>
                </div>
        
                <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
                    <i class="fas fa-car"></i>
                    <h3>Accessibilité</h3>
-                   <p>Un grand parking gratuit à<br> proximité</p>
+                   <p>Deux grands parking gratuits sont à<br> proximité</p>
                </div>
        
                <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
@@ -55,7 +56,7 @@
                <div class="box" data-aos="zoom-in-up" data-aos-delay="600">
                  <i class="fa-solid fa-phone"></i>
                    <h3>Assistance</h3>
-                   <p>Nous sommes joignables par téléphone <br> de 7h à 22h</p>
+                   <p>Nous sommes joignables du lundi au dimanche par téléphone <br> de 7h à 22h</p>
                </div>
        
                <div class="box" data-aos="zoom-in-up" data-aos-delay="750">
@@ -75,11 +76,11 @@
               <br><br>
              <p>
               Notre laverie libre-service est ouverte 7 jours/7 de 7H à 22H <br><br>
-               Les machines sont révisées régulièrement, nettoyées et désinfectées tous les jours ! <br><br>
+               Les machines sont révisées régulièrement <br><br>
                Nous possédons un distributeur de lessive, d'adoucissant, de désinfectant et de détachant. (Made in France)  <br><br>
                Nous avons une centrale de paiement acceptant les billets, monnaies et CB avec et sans contacts.<br><br>
                Mise à disposition d'un locker Amazon pour retirer vos colis.</p><br>
-               <a href="https://status.wi-line.fr/?id=e848c2a595ebab416eec427149c211e8" class="btn-search-home-btn">VOIR LES MACHINES DISPONIBLES</a>
+
              
            </div>
         </div>
@@ -117,9 +118,6 @@
                       <div class="text" >kg <br> Capacité maximale<br>de lavage</div>
                     </div>
                   </div>
-
-                
-
                 </div>
              </div>
           </div>
@@ -174,12 +172,13 @@
         <div class="bloc -liens">
           <h5>LIENS RAPIDES</h5>
           <ul class="liens">
-        <li><a href="index.php">ACCUEIL</a></li>
-        <li><a href="services et tarifs.php">SERVICES ET  TARIFS</a></li>
-        <li><a href="fonctionnement.php">FONCTIONNEMENT</a></li>
-        <li><a href="contact.php">CONTACT</a></li>
-        <li><a href="galerie.php">GALERIE</a></li>
-        <li><a href="à-propos.php">À PROPOS</a></li>
+            <li><a href="index.php">ACCUEIL</a></li>
+            <li><a href="services et tarifs.php">SERVICES ET  TARIFS</a></li>
+            <li><a href="fonctionnement.php">FONCTIONNEMENT</a></li>
+            <li><a href="location.php">LOCATION</a></li>
+            <li><a href="contact.php">CONTACT</a></li>
+            <li><a href="galerie.php">GALERIE</a></li>
+            <li><a href="à-propos.php">À PROPOS</a></li>
           </ul>
         </div>
         <div class="bloc -media">
