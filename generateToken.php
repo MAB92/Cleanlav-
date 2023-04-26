@@ -1,5 +1,4 @@
 <?php
-
 function generateToken(){
     //générer un id unique
     $id = uniqid();//renvoie un nombre aléatoire en chaine de caracteres

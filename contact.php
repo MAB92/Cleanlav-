@@ -17,6 +17,7 @@
       <li><a href="index.php">ACCUEIL</a></li>
         <li><a href="services et tarifs.php">SERVICES ET TARIFS</a></li>
         <li><a href="fonctionnement.php">FONCTIONNEMENT</a></li>
+        <li><a href="location.php">LOCATION</a></li>
         <li><a href="contact.php">CONTACT</a></li>
         <li><a href="galerie.php">GALERIE</a></li>
         <li><a href="à-propos.php">À PROPOS</a></li>
@@ -57,8 +58,9 @@
           <h5>LIENS RAPIDES</h5>
           <ul class="liens">
           <li><a href="index.php">ACCUEIL</a></li>
-        <li><a href="services et tarifs.php">SERVICES ET  TARIFS</a></li>
+        <li><a href="services et tarifs.php">SERVICES ET TARIFS</a></li>
         <li><a href="fonctionnement.php">FONCTIONNEMENT</a></li>
+        <li><a href="location.php">LOCATION</a></li>
         <li><a href="contact.php">CONTACT</a></li>
         <li><a href="galerie.php">GALERIE</a></li>
         <li><a href="à-propos.php">À PROPOS</a></li>

@@ -3,6 +3,7 @@ if(isset($_GET['accepte-cookie'])){
   setcookie('accepte-cookie', true, time() + 365*24*3600 );
   header('location:./');
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -20,9 +21,10 @@ if(isset($_GET['accepte-cookie'])){
         <a href="index.php"><span>Clean</span>lav'</a>
       </div> 
       <ul class="menu">
-      <li><a href="index.php">ACCUEIL</a></li>
-        <li><a href="services et tarifs.php">SERVICES ET  TARIFS</a></li>
+        <li><a href="index.php">ACCUEIL</a></li>
+        <li><a href="services et tarifs.php">SERVICES ET TARIFS</a></li>
         <li><a href="fonctionnement.php">FONCTIONNEMENT</a></li>
+        <li><a href="location.php">LOCATION</a></li>
         <li><a href="contact.php">CONTACT</a></li>
         <li><a href="galerie.php">GALERIE</a></li>
         <li><a href="à-propos.php">À PROPOS</a></li>
@@ -41,7 +43,7 @@ if(isset($_GET['accepte-cookie'])){
             </p>
             <h1><i class="fa-sharp fa-solid fa-location-dot"></i> 31 PLACE DES 4 SAISONS <br>27100 VAL DE REUIL </h1>
       </div> 
-      <a href="https://status.wi-line.fr/?id=e848c2a595ebab416eec427149c211e8" class="btn-search-home-btn">VOIR LES MACHINES DISPONIBLES</a>
+      <a href="à-propos.php" class="btn-search-home-btn"> EN SAVOIR +</a>
       </section>
       <section>
        <div class="paiements">
@@ -54,12 +56,13 @@ if(isset($_GET['accepte-cookie'])){
           <div class="bloc -liens">
             <h5>LIENS RAPIDES</h5>
             <ul class="liens">
-            <li><a href="index.php">ACCUEIL</a></li>
-        <li><a href="services et tarifs.php">SERVICES ET  TARIFS</a></li>
-        <li><a href="fonctionnement.php">FONCTIONNEMENT</a></li>
-        <li><a href="contact.php">CONTACT</a></li>
-        <li><a href="galerie.php">GALERIE</a></li>
-        <li><a href="à-propos.php">À PROPOS</a></li>
+              <li><a href="index.php">ACCUEIL</a></li>
+              <li><a href="services et tarifs.php">SERVICES ET  TARIFS</a></li>
+              <li><a href="fonctionnement.php">FONCTIONNEMENT</a></li>
+              <li><a href="location.php">LOCATION</a></li>
+              <li><a href="contact.php">CONTACT</a></li>
+              <li><a href="galerie.php">GALERIE</a></li>
+              <li><a href="à-propos.php">À PROPOS</a></li>
             </ul>
           </div>
           <div class="bloc -media">
@@ -82,7 +85,7 @@ if(isset($_GET['accepte-cookie'])){
        ?>
           <div class="banniere" >
                 <div class="text-banniere">
-                  <p>Notre site utise des cookies pour une meilleure experience</p>
+                  <p>Ce site utilise des cookies et vous donne le contrôle sur ceux que vous souhaitez activer pour une meilleure experience</p>
                 </div>
                 <div class="button-banniere">
                   <a href="?accepte-cookie">OK, J'accepte</a>
