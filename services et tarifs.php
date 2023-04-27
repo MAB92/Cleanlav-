@@ -44,7 +44,7 @@
                <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
                    <i class="fas fa-car"></i>
                    <h3>Accessibilité</h3>
-                   <p>Deux grands parking gratuits sont à<br> proximité</p>
+                   <p>Deux grands parkings gratuits sont à<br> proximité</p>
                </div>
        
                <div class="box" data-aos="zoom-in-up" data-aos-delay="450">

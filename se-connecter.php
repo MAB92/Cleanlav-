@@ -1,5 +1,4 @@
 <?php
-
 $is_invalid = false;
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -28,7 +27,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             exit;
         }
     }
-    
     $is_invalid = true;
 }
 ?>
@@ -58,7 +56,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <li><a href="à-propos.php">À PROPOS</a></li>
       </ul> 
       <a href="index2.php" class="btn-search">Se connecter</a>
-
       <div class="responsive-menu"></div>
    </header>
    <section id="contact">
@@ -82,6 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
           </div>
         </div>
         <button>Se Connecter</button>
+        <button>Mot de passe oublier</button>
     </form>
     </section>
 

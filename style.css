@@ -604,7 +604,7 @@ i{
     padding-top: 2%;
 }
 #location h2:hover{
-    color: #b08bad;
+    color: #9d6f99;
 }
 #location p{
     font-size: 18px;
@@ -1027,7 +1027,7 @@ footer span{
     font-family:'Franklin Gothic Medium';
 }
 .text-banniere p{
-    font-size: large;
+    font-size: 12px;
 }
 .button-banniere{
     padding-top: 15px;
