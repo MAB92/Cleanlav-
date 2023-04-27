@@ -56,7 +56,7 @@ header .logo a span {
 }
 .menu li a {
     color: #dcfffe;
-    font-size: 17px;
+    font-size: 14px;
     text-decoration: 0;
     display: inline-block;
     position: relative;
@@ -388,9 +388,11 @@ i{
 #services p {
     color:#ffffff ;
 }
+
 #services:hover{
     transform: scale(1.1);
 }
+
 #services .btn-search-home-btn{
     margin-left: 20%;
     background-color: #ffffff;
@@ -407,7 +409,6 @@ i{
     width: 100%;
     background: linear-gradient(45deg);
     padding: 15px 9%;
-   
 }
 
 .column{
@@ -446,13 +447,11 @@ i{
 }
 .content .box-conter .text{
     font-size: 16px; 
-    color: rgb(255, 255, 255);
-       
+    color: rgb(255, 255, 255);  
 }
 
 
 #nos-services .box-container {
-   
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
     gap: 12px;
@@ -624,7 +623,6 @@ i{
     margin-left: 43%;
     background-color: #ffffff;
     color: #21889f;
-    
 }
 #location .btn-search:hover{
     background-color: #21889f;
@@ -721,13 +719,14 @@ i{
 }
 #à-propos h3{
    font-size: 16px;
-   color: #e5b5e6;
+   color: #ffffff;
    padding-left:20%;
    margin-top: 3%;
    margin-bottom: 2%;
 }
 #à-propos h3:hover{
     color: #e5b5e6;
+    transform: scale(1.1);
 }
 
 #à-propos iframe{
@@ -763,6 +762,9 @@ i{
 #à-propos h5{
     color: #ffffff;
     font-size: 16px;
+}
+#à-propos h5:hover{
+    transform: scale(1.1);
 }
 #galerie{
     margin-top: 100px;

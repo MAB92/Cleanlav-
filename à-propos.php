@@ -23,7 +23,6 @@
         <li><a href="à-propos.php">À PROPOS</a></li>
       </ul> 
       <a href="index2.php" class="btn-search">Se connecter</a>
-
       <div class="responsive-menu"></div>
    </header>
   
