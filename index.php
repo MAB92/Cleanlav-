@@ -43,7 +43,7 @@ if(isset($_GET['accepte-cookie'])){
             </p>
             <h1><i class="fa-sharp fa-solid fa-location-dot"></i> 31 PLACE DES 4 SAISONS <br>27100 VAL DE REUIL </h1>
       </div> 
-      <a href="à-propos.php" class="btn-search-home-btn"> EN SAVOIR +</a>
+      <a href="à-propos.php" class="btn-search-home-btn"> EN SAVOIR PLUS</a>
       </section>
       <section>
        <div class="paiements">
