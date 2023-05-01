@@ -259,26 +259,6 @@ header .logo a span {
     box-shadow: 0 0 10px #29d9d5;
 }
 
-#à-propos{
-    margin-top: 100px;
-    margin-bottom: 50px;
-    padding: 0 10%;
-    width: 100%;
-}
-#à-propos p{
-    color: #b5d1d0;
-    margin-bottom:  30px;
-    font-size: 17px;
-}
-#à-propos h2{
-    margin-bottom:  30px;
-}
-#à-propos ul li{
-    color: #aeeeec;
-    margin-bottom:  7px;
-    font-size: 20px;
-    text-decoration: none;
-}
 
 .title {
     text-transform: capitalize;
@@ -383,7 +363,6 @@ i{
     border-radius: 20px;
     padding-left: 10%;
     margin-left: 30%;
-   
 }
 #services p {
     color:#ffffff ;
@@ -539,13 +518,24 @@ i{
 }
 #fonctionnement h3{
     font-size: 25px;
-    color: #0a4856;
+    color: #1e808f;
     margin: auto;
     margin-bottom: 3%;
     padding-left: 10%;
 }
 #fonctionnement h3:hover{
     color: #e9b7e4;
+}
+#fonctionnement h5{
+    font-size: 25px;
+    color: #ffffff;
+    margin: auto;
+    margin-bottom: 3%;
+    padding-left: 10%;
+}
+#fonctionnement h5:hover{
+    color: #e9b7e4;
+    transform: scale(1.1);
 }
 #fonctionnement .box-container .box{
     box-shadow: 0 5px 10px rgba(0,0,0,0.2) ;
@@ -573,11 +563,7 @@ i{
     font-size: 35px;
     color: #ffffff;
 }
-#fonctionnement h3{
-    font-size: 15px;
-    padding-right: 10%;
-    color: #1fabc0;
-}
+
 #fonctionnement .box-container h2{
     font-size: 20px;
     color:#ffffff;
@@ -593,7 +579,7 @@ i{
     width: 100%;
     background: linear-gradient(45deg);
     padding-left: 7%;
-    padding-top:10px ;
+    padding-top:5px ;
     padding-bottom: 50px;
 }
 #location h2{
@@ -646,14 +632,13 @@ i{
     transform: scale(1.1);
 }
 
-
 #location .row{
     padding-left: 15%; 
     padding-bottom: 5%;
    
 }
 #location #galerie{
-    margin-top: 10px;
+    margin-top: 5px;
     padding: 0 ;
     width: 100%;
     margin-bottom: 50px;
@@ -677,17 +662,16 @@ i{
     width: 100%;
     background: linear-gradient(45deg);
     padding-left: 7%;
-    padding-top:10px ;
-    padding-bottom: 50px;
+    padding-top:5px ;
+  
 }
-
 
 #à-propos .box-container{
     display:flex;
     grid-template-columns: repeat(auto-fit,minmax(290px,1000px));
     gap: 5px;
     margin-bottom: 5%;
-    height: 580px;
+    height: 590px;
     width:580px; 
     margin-left: 30%;
 }
@@ -696,12 +680,13 @@ i{
     border-radius: 5px;
     background: #0a4856;
     text-align: center;
-    padding: 25px 25px; 
+    padding: 25px ; 
     height: 550px;
     border-radius: 5%;
 }
 #à-propos .box-container .box:hover{
     transform: scale(1.1);
+    font-size: 12px;
 }
 
 #à-propos .box-container .box p{
@@ -709,12 +694,12 @@ i{
     color: white;
     line-height: 1;
     text-align:center;
-    margin-right: 12%;
+    margin-right: 10%;
     margin: auto;
     padding: auto;
 }
 #à-propos .box-container .box h2{
-    font-size: 20px;
+    font-size: 18px;
     color:#ffffff;
 }
 #à-propos h3{
@@ -765,6 +750,12 @@ i{
 }
 #à-propos h5:hover{
     transform: scale(1.1);
+}
+#à-propos{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 0 10%;
+    width: 100%;
 }
 #galerie{
     margin-top: 100px;
@@ -946,7 +937,7 @@ footer{
     text-decoration: none;
 }
 footer a{
-    font-size: 17px;
+    font-size: 13px;
     color: #fcffff;
     text-decoration: 0;
     text-align: center;
@@ -954,16 +945,16 @@ footer a{
 }
 footer a span{
    color :#29d9d5;
-   font-size: 25px;
+   font-size: 20px;
 }
 footer i{
-   font-size: 25px;
+   font-size: 23px;
 }
 footer i:hover{
     color: #1fabc0;
 }
 footer .liens li{
-    font-size: 20px;
+    font-size: 15px;
     color:#333;
     text-align: center;
     padding-top: 5%;
@@ -972,7 +963,7 @@ footer .liens li{
     text-decoration:underline;
 }
 footer .media li{
-    font-size: 20px;
+    font-size: 16px;
     color:#333;
     padding-top: 3%;
     display: inline-flex;
@@ -1004,7 +995,6 @@ footer  h4{
    font: size 16px;
    color: #ffffff;
  
-  
 }
 footer  h5{
     color: #49c3c3;
@@ -1043,7 +1033,7 @@ footer span{
     font-size: 15px;
 }
 /*responsive*/
-@media (max-width:1361px) {
+@media (max-width:1261px) {
     header .menu{
         display: none;
     }
@@ -1129,6 +1119,7 @@ footer span{
         gap: 5px;
         margin-bottom: 40px;
     }
+    
     #nos-tarifs .box{
         text-align: center;
     }
@@ -1176,7 +1167,7 @@ footer span{
 
     #à-propos .box-container{
         height:100% ;
-        width:50% ;
+        width:35% ;
         padding-left:15px  ;
         display: block;
     }
@@ -1219,7 +1210,13 @@ footer span{
         width: 80%;
         margin-right: 60%;
     }
-   
+    #à-propos .box-container .box h2{
+        font-size: 10px;
+    }
+ 
+    #à-propos .box-container .box p{
+        font-size: 11px;
+    }
     .contenu-footer a{
         padding-right:20%;
     }
@@ -1391,8 +1388,6 @@ footer span{
     }
 }
 
-  
-
 @media (max-width:1374px) {
    
     #à-propos iframe{
@@ -1400,7 +1395,6 @@ footer span{
         height: 100%;
     }
 }
-
 @media (max-width:981px){
     #home .box-container p{
         text-align: center;
@@ -1422,6 +1416,13 @@ footer span{
     #fonctionnement h3{
         font-size: 15px;
     }
+    #fonctionnement h5{
+        font-size: 17px;
+        color: #ffffff;
+        margin: auto;
+        margin-bottom: 3%;
+        padding-left: 10%;
+    }
     #fonctionnement  img {
         height: 13%;
         width: 50%;
@@ -1431,7 +1432,7 @@ footer span{
     }
 }
 
-@media (max-width:581px){
+@media (max-width:480px){
     .responsive-menu{
         width: 10%;
         height: 50%;
@@ -1442,7 +1443,6 @@ footer span{
         cursor: pointer;
         font-size: 10px;
     }
-  
     .responsive-menu::after{
         position: absolute;
         content: "";
@@ -1579,14 +1579,13 @@ footer span{
     }
     #nos-services .box-container p{
         text-align:center;
-        padding-left: 15%;
-        margin-left: 13%;
+       
     }
     #nos-tarifs .box-container h4{
         font-size: 15px;
     }
     #nos-tarifs .box-container p{
-        font-size: 7px;
+        font-size: 8px;
     }
     #nos-services .text{
         font-size: 6px;
@@ -1643,6 +1642,13 @@ footer span{
         padding-right: 10%;
         color: #1fabc0;
     }
+    #fonctionnement h5{
+        font-size: 12px;
+        color: #ffffff;
+        margin: auto;
+        margin-bottom: 3%;
+        padding-left: 10%;
+    }
     #fonctionnement  img {
         height: 13%;
         width: 50%;
@@ -1650,20 +1656,27 @@ footer span{
     #fonctionnement .box-container .box{
         height: 40%;
     }
+    #location .left p{
+        font-size: 12px;
+    }
+    #location .left h2{
+        font-size: 16px;
+    }
     #à-propos .box-container {
-        height:60% ;
+        height:100% ;
         width:50% ;
         gap: 5px;
         margin-bottom: 40px;
     }
     #à-propos .box{
-        height:40% ;
+        height:100% ;
         width:40% ;
         padding-right: 50%;
         display:grid;
     }
     #à-propos .box  h2{
         font-size: 8px;
+     
     }
     #à-propos .box p{
         font-size: 9px;
@@ -1674,8 +1687,15 @@ footer span{
     }
     #à-propos .box-container .box {
         width: 100%;
-        height: 70%;
+        height: 100%;
       
+    }
+    #à-propos .box-container .box h2{
+        font-size: 10px;
+        margin-right: 5px;
+    }
+    #à-propos .box-container .box p{
+        font-size: 8px;
     }
     #à-propos h5{
         font-size: 9px;
@@ -1683,16 +1703,14 @@ footer span{
     #à-propos h4{
         font-size: 7px;
     }
-    #à-propos h2{
-        font-size: 7px;
-    }
+   
     #à-propos iframe{
           width: 90%;
          
     }
     #à-propos h3 {
-        font-size: 8px;
-        margin-right:100px ;
+        font-size: 7px;
+        margin-right:5px ;
     }
     #à-propos  i{
         font-size: 15px;
@@ -1708,10 +1726,7 @@ footer span{
         border-radius: 20px;
         margin-left: 20%;
     }
-    .content .box-conter .text{
-        font-size: 9px;
-    }
-  
+    
     footer{
         width: 120%;
         background-color: #333;

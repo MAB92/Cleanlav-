@@ -3,7 +3,6 @@ if(isset($_GET['accepte-cookie'])){
   setcookie('accepte-cookie', true, time() + 1365*24*3600 );
   header('location:./');
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -150,10 +149,10 @@ if(isset($_GET['accepte-cookie'])){
        ?>
           <div class="banniere" >
                 <div class="text-banniere">
-                  <p>Ce site utilise des cookies et vous donne le contrôle sur ceux que vous souhaitez activer pour une meilleure experience</p>
+                  <p> Nous utilisons des cookies (et des technologies similaires) à de nombreuses fins, y compris d’amélioration de votre expérience sur notre site, de publicité et d’analyse. Cliquez sur <br> « Accepter tout » pour accepter ces utilisations. Pour en savoir plus, consultez notre Politique en matière de cookies.</p>
                 </div>
                 <div class="button-banniere">
-                  <a href="?accepte-cookie">OK, J'accepte</a>
+                  <a href="?accepte-cookie">Tout accepter</a>
                 </div>
           </div>
       <?php 
