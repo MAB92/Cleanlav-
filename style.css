@@ -608,11 +608,13 @@ i{
     margin-left: 43%;
     background-color: #ffffff;
     color: #21889f;
+    font-size: 16px;
 }
 #location .btn-search:hover{
-    background-color: #21889f;
+    background-color: #06667b;
     color: #ffffff;
     transform: scale(1.1); 
+    font-size: 20px;
 }
 
 #location .left{
@@ -640,7 +642,7 @@ i{
     margin-top: 0;
     padding: 0 ;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 #location .gallery img{
     width: 100%;
@@ -1244,14 +1246,13 @@ footer span{
     #fonctionnement .box-container {
         margin: 65px;
         height:30% ;
-        width:30% ;
+        width:35% ;
         padding-left: 15px  ;
         display: block;
         gap: 5px;
         margin-bottom: 40px;
         font-size:12px;
         margin-left: 27%;
-      
     }
     #fonctionnement .box-container p{
         font-size: 10px;
@@ -1345,7 +1346,7 @@ footer span{
     }
     
     footer p{
-        font-size: 8px; 
+        font-size: 10px; 
         padding-right:45%;
     }
     footer h5{
@@ -1362,7 +1363,7 @@ footer span{
     }
    
     footer a span{
-        font-size: 10px;
+        font-size: 12px;
        
     }
     footer i{
@@ -1782,7 +1783,7 @@ footer span{
        padding-left:27%;
     }
     footer h4{
-        padding-left:50%;
+        margin-left:90%;
         font-size: 7px;
     }
     footer a{
@@ -1800,7 +1801,7 @@ footer span{
         font-size:6px ;
     }
     .text-banniere p{
-        font-size: 8px;
+        font-size: 10px;
     }
     .button-banniere{
         padding-top: 15px;

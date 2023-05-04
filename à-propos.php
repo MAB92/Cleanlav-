@@ -78,7 +78,7 @@ if(isset($_GET['accepte-cookie'])){
               <div class="box" data-aos="zoom-in-up" data-aos-delay="750">
                     <h2>  <br>Horaires : </h2>
                     <p>
-                      <br>  <br>  <br>  <br>  <br>  <br>   
+                      <br>  <br>  <br>  <br>   
                      Lundi	07h00 - 22h00 <br><br><br> 
                      Mardi	07h00 - 22h00 <br><br><br> 
                      Mercredi	07h00 - 22h00 <br><br><br> 
