@@ -95,34 +95,34 @@ if(isset($_GET['accepte-cookie'])){
       <section id="nos-services">
         <h1 class="title"> NOS EQUIPEMENTS  :</h1>
           <div class =row>
-             <div class="counter-up" >
-                <div class="content" >
+             <div class="counter-up">
+                <div class="content">
 
-                  <div class="column" >
-                    <div class="box-conter" >
-                      <div class="counter" >9</div>
-                      <div class="text" >Machines à laver<br><br>professionnelles</div>
+                  <div class="column">
+                    <div class="box-conter">
+                      <div class="counter">9</div>
+                      <div class="text">Machines à laver<br><br>professionnelles</div>
                     </div>
                   </div>
 
-                  <div class="column" >
-                    <div class="box-conter" >
-                      <div class="counter" >4</div>
-                      <div class="text" >Séchoirs de <br><br>14 kg</div>
+                  <div class="column">
+                    <div class="box-conter">
+                      <div class="counter">4</div>
+                      <div class="text">Séchoirs de <br><br>14 kg</div>
                     </div>
                   </div>
 
-                  <div class="column" >
-                    <div class="box-conter" >
-                      <div class="counter" >5</div>
+                  <div class="column">
+                    <div class="box-conter">
+                      <div class="counter">5</div>
                       <div class="text" >Programmes de Lavage<br><br> de 15° à 90°</div>
                     </div>
                   </div>
 
-                  <div class="column" >
-                    <div class="box-conter" >
-                      <div class="counter" >20</div>
-                      <div class="text" >kg <br> Capacité maximale<br>de lavage</div>
+                  <div class="column">
+                    <div class="box-conter">
+                      <div class="counter">20</div>
+                      <div class="text">kg <br> Capacité maximale<br>de lavage</div>
                     </div>
                   </div>
                 </div>
@@ -173,7 +173,6 @@ if(isset($_GET['accepte-cookie'])){
         </div>
         </section>
   
-    
      <footer>
       <div class="contenu-footer">
         <div class="bloc -liens">
@@ -203,6 +202,7 @@ if(isset($_GET['accepte-cookie'])){
       </div>
       <p>Réaliser par  Mr&nbsp;.MAB dev | Copyright © Cleanlav' 2023 .</p>
    </footer>
+
    <?php 
        if (!isset($_COOKIE['accepte-cookie'])){
        ?>
@@ -219,6 +219,7 @@ if(isset($_GET['accepte-cookie'])){
       <?php 
       }
       ?> 
+
    <script>
       let toggle_menu = document.querySelector('.responsive-menu');
      let menu = document.querySelector('.menu');
@@ -227,6 +228,7 @@ if(isset($_GET['accepte-cookie'])){
          menu.classList.toggle('responsive')
       }
    </script>
+
     <script>
       $(document).ready(function(){
         $(".counter").counterUp({
@@ -235,5 +237,6 @@ if(isset($_GET['accepte-cookie'])){
         });
       });
     </script>
+    
 </body>
 </html>

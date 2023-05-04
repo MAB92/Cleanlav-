@@ -581,9 +581,10 @@ i{
     padding-left: 7%;
     padding-top:5px ;
     padding-bottom: 50px;
+   
 }
 #location h2{
-    font-size: 20px;
+    font-size: 24px;
     color:#ffffff;
     padding-left: 5%;
     padding-top: 2%;
@@ -592,7 +593,7 @@ i{
     color: #9d6f99;
 }
 #location p{
-    font-size: 18px;
+    font-size: 22px;
     color:#ffffff;
     line-height: 1.5;
     text-align:center;
@@ -638,11 +639,10 @@ i{
    
 }
 #location #galerie{
-    margin-top: 5px;
+    margin-top: 0;
     padding: 0 ;
     width: 100%;
     margin-bottom: 50px;
-
 }
 #location .gallery img{
     width: 100%;
@@ -671,7 +671,7 @@ i{
     grid-template-columns: repeat(auto-fit,minmax(290px,1000px));
     gap: 5px;
     margin-bottom: 5%;
-    height: 590px;
+    height: 580px;
     width:580px; 
     margin-left: 30%;
 }
@@ -701,6 +701,14 @@ i{
 #à-propos .box-container .box h2{
     font-size: 18px;
     color:#ffffff;
+}
+#à-propos .box-container .box h2:hover{
+    color:#c680c7;
+    transform: scale(1.1);
+}
+#à-propos .box-container .box p:hover{
+    color:#c680c7;
+    transform: scale(1.1);
 }
 #à-propos h3{
    font-size: 16px;
@@ -1164,14 +1172,6 @@ footer span{
         font-size: 10px;
        justify-content: space-between;
     }
-
-    #à-propos .box-container{
-        height:100% ;
-        width:35% ;
-        padding-left:15px  ;
-        display: block;
-    }
-    
     #à-propos .box p{
         font-size: 7px;
     }
@@ -1183,10 +1183,7 @@ footer span{
         gap: 5px;
         margin-bottom: 40px;
     }
-    #à-propos  .box p{
-        font-size: 10px;
-        padding-right:20px;
-    }
+  
     #à-propos .box:hover{
         transform: scale(1.1);
     }
@@ -1216,6 +1213,16 @@ footer span{
  
     #à-propos .box-container .box p{
         font-size: 11px;
+    }
+    #à-propos .box-container .box {
+        height:80% ;
+        width:100% ;
+    }
+    #à-propos .box-container{
+        height:100% ;
+        width:30% ;
+        padding-left:15px  ;
+        display: block;
     }
     .contenu-footer a{
         padding-right:20%;
@@ -1429,6 +1436,22 @@ footer span{
     }
     #fonctionnement .box-container .box{
         height: 40%;
+
+    }
+    #à-propos .box-container .box {
+        height:80% ;
+        width:100% ;
+       
+    }
+    #à-propos .box-container .box p{
+        font-size: 8px;
+       
+    }
+    #à-propos .box-container{
+        height:90% ;
+        width:40% ;
+        padding-left:15px  ;
+        display: block;
     }
 }
 
@@ -1664,13 +1687,13 @@ footer span{
     }
     #à-propos .box-container {
         height:100% ;
-        width:50% ;
+        width:100% ;
         gap: 5px;
         margin-bottom: 40px;
     }
     #à-propos .box{
         height:100% ;
-        width:40% ;
+        width:50% ;
         padding-right: 50%;
         display:grid;
     }
@@ -1687,12 +1710,12 @@ footer span{
     }
     #à-propos .box-container .box {
         width: 100%;
-        height: 100%;
+        height: 50%;
       
     }
     #à-propos .box-container .box h2{
         font-size: 10px;
-        margin-right: 5px;
+      
     }
     #à-propos .box-container .box p{
         font-size: 8px;

@@ -57,8 +57,9 @@ if(isset($_GET['accepte-cookie'])){
       <section>
           <div class="box-container">
               <div class="box" data-aos="zoom-in-up" data-aos-delay="750">
-                    <h2>Prestations :</h2>
-                       <p>      
+                    <h2>  <br>Prestations :</h2>
+                       <p>  
+                       <br>  <br>  <br>    
                            Blanchisserie pour particulier<br><br>
                            Distributeur d'assouplissant<br><br>
                            Distributeur de détachant<br><br>
@@ -75,8 +76,9 @@ if(isset($_GET['accepte-cookie'])){
                       </p>
                 </div>
               <div class="box" data-aos="zoom-in-up" data-aos-delay="750">
-                    <h2>Horaires : </h2>
+                    <h2>  <br>Horaires : </h2>
                     <p>
+                      <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>
                      Lundi	07h00 - 22h00 <br><br>
                      Mardi	07h00 - 22h00 <br><br>
                      Mercredi	07h00 - 22h00 <br><br>
