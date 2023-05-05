@@ -259,7 +259,6 @@ header .logo a span {
     box-shadow: 0 0 10px #29d9d5;
 }
 
-
 .title {
     text-transform: capitalize;
     margin: 70px 0;
@@ -559,7 +558,7 @@ i{
 }
 #fonctionnement h4{
     font-size: 35px;
-    color: #ffffff;
+    color: #a4c2c7;
 }
 
 #fonctionnement .box-container h2{
@@ -1049,6 +1048,7 @@ footer span{
     .btn-search{
         display:block;
         font-size:12px;
+        margin-right: 8%;
     }
   
     #home .box-container h2{
@@ -1056,10 +1056,9 @@ footer span{
         text-align: center;
         margin-left: 25%;
     }
- 
+   
     #home .box-container .home-btn{
-        display: block;
-        
+        display: block; 
     } 
     .home-btn{
         display: block;
@@ -1070,15 +1069,21 @@ footer span{
     #home .box-container p{
         text-align: center;
         font-size: 13px;
-        margin-left: 25%;
+        margin-left: 23%;
         text-align: start;
     }
-
+    .paiements i{
+        font-size: 24px;
+    }
+    .paiements h1{
+        font-size: 19px;
+        justify-content: space-between;
+    }
     #home .box-container{
-       margin-top: 30%;
+        margin-top: 40%;
         height: 100%;
-        width:40% ;
-    
+        width:30%;
+     
     }
     #services{
         margin-right: 15%;
@@ -1165,13 +1170,7 @@ footer span{
         margin-left: 25%;
         padding-right:20% ;
     }
-    .paiements i{
-        font-size: 20px;
-    }
-    .paiements h1{
-        font-size: 10px;
-       justify-content: space-between;
-    }
+  
     #à-propos .box p{
         font-size: 7px;
     }
@@ -1232,6 +1231,9 @@ footer span{
         width: 100%;
     }
     #fonctionnement h4{
+        font-size: 18px;
+    }
+    #fonctionnement h5{
         font-size: 18px;
     }
     #fonctionnement h3{
@@ -1433,19 +1435,35 @@ footer span{
     }
 }
 @media (max-width:981px){
+    #home .box-container{
+        margin-left: 40%;
+        width: 50%;
+        height: 80%;
+    }
     #home .box-container p{
         text-align: center;
-        font-size: 8px;
-        margin-left: 25%;
+        font-size: 10px;
+       
     }
     #home .box-container i{
         font-size: 15px;
     }
     #home .box-container h1{
         font-size: 10px;
+        
     }
     #home .box-container h2{
         font-size: 9px;
+    }
+    #home .btn-search-home-btn{
+        font-size:9px;
+        margin-left:13% ; 
+       
+    }
+    .btn-search{
+        display:block;
+        font-size:9px;
+        margin-right:2% ;
     }
     .content .box-conter .text{
         font-size: 9px; 
@@ -1466,11 +1484,10 @@ footer span{
         font-size: 15px;
     }
     #fonctionnement h5{
-        font-size: 17px;
+        font-size: 13px;
         color: #ffffff;
-        margin: auto;
-        margin-bottom: 3%;
-        padding-left: 10%;
+        margin-bottom: 5%;
+        
     }
     #fonctionnement  img {
         height: 13%;
@@ -1479,6 +1496,14 @@ footer span{
     #fonctionnement .box-container .box{
         height: 40%;
 
+    }
+    .paiements i{
+        font-size: 17px;
+    }
+    .paiements h1{
+        font-size: 12px;
+       justify-content: space-between;
+       
     }
     #à-propos .box-container .box {
         height:80% ;
@@ -1509,8 +1534,9 @@ footer span{
        padding-left:30%;
     }
     footer h4{
-        
-        font-size: 8px;
+        display: flex;
+        font-size: 7px;
+        margin-top: 10%;
     }
     footer a{
         display:block ;
@@ -1521,7 +1547,7 @@ footer span{
     }
     footer i{
         font-size: 10px;
-        padding-left: 0%;
+        display: flex;
     }
    footer{
     padding-right: 10%;
