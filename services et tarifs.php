@@ -108,7 +108,7 @@ if(isset($_GET['accepte-cookie'])){
                   <div class="column">
                     <div class="box-conter">
                       <div class="counter">4</div>
-                      <div class="text">Séchoirs de <br><br>14 kg</div>
+                      <div class="text">Séchoirs de &nbsp;<br><br>14 kg</div>
                     </div>
                   </div>
 
