@@ -30,7 +30,7 @@ if(isset($_GET['accepte-cookie'])){
         <li><a href="galerie.php">GALERIE</a></li>
         <li><a href="à-propos.php">À PROPOS</a></li>
       </ul> 
-      <a href="index2.php" class="btn-search">Se connecter</a>
+      <a href="index2.php" class="btn-search">Se Connecter</a>
       <div class="responsive-menu"></div>
    </header>
   
@@ -79,13 +79,13 @@ if(isset($_GET['accepte-cookie'])){
                     <h2>  <br>Horaires : </h2>
                     <p>
                       <br>  <br>  <br>  <br>   
-                     Lundi	07h00 - 22h00 <br><br><br> 
-                     Mardi	07h00 - 22h00 <br><br><br> 
-                     Mercredi	07h00 - 22h00 <br><br><br> 
-                     Jeudi	07h00 - 22h00 <br><br><br> 
-                     Vendredi	07h00 - 22h00 <br><br><br> 
-                     Samedi	07h00 - 22h00 <br><br><br> 
-                     Dimanche	07h00 - 22h00
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lundi	07h00 - 22h00 <br><br><br> 
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mardi	07h00 - 22h00 <br><br><br> 
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mercredi	07h00 - 22h00 <br><br><br> 
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jeudi	07h00 - 22h00 <br><br><br> 
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendredi	07h00 - 22h00 <br><br><br> 
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Samedi	07h00 - 22h00 <br><br><br> 
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dimanche	07h00 - 22h00
                     </p>
              </div>
          </div> 
@@ -126,20 +126,20 @@ if(isset($_GET['accepte-cookie'])){
           <div class="banniere" >
                 <div class="text-banniere">
                   <p>
-                    Nous utilisons des cookies (et des technologies similaires) à de nombreuses fins, y compris d’amélioration de votre expérience sur notre site, de publicité et d’analyse. Cliquez sur <br> « Accepter tout » pour accepter ces utilisations. Pour en savoir plus, consultez notre Politique en matière de cookies.
+                    Nous utilisons des cookies et des technologies similaires à de nombreuses fins, y compris d’amélioration de votre expérience sur notre site, de publicité et d’analyse. <br><br> &nbsp; Cliquez sur &nbsp;« Accepter tout » &nbsp;pour accepter ces utilisations. Pour en savoir plus, consultez notre Politique en matière de cookies.
                   </p>
                 </div>
                 <div class="button-banniere">
-                  <a href="?accepte-cookie">Tout accepter</a>
+                  <a href="?accepte-cookie"> Accepter tout</a>
                 </div>
           </div>
       <?php 
       }
       ?> 
    <script>
-      let toggle_menu = document.querySelector('.responsive-menu');
-     let menu = document.querySelector('.menu');
-      toggle_menu.onclick = function(){
+         let toggle_menu = document.querySelector('.responsive-menu');
+         let menu = document.querySelector('.menu');
+         toggle_menu.onclick = function(){
          toggle_menu.classList.toggle('active');
          menu.classList.toggle('responsive')
       }

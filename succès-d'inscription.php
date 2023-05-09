@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -23,14 +22,14 @@
         <li><a href="galerie.php">GALERIE</a></li>
         <li><a href="à-propos.php">À PROPOS</a></li>
       </ul> 
-      <a href="index2.php" class="btn-search">Se connecter</a>
+      <a href="index2.php" class="btn-search">Se Connecter</a>
 
       <div class="responsive-menu"></div>
    </header>
    <section id="contact">
     <h1 class="title"> S'enregistrer :</h1>
 
-    <p>BIEN ENREGISTER. MAINTENANT  <br> <a href="se-connecter.php"> CONNECTEZ-VOUS</a>.</p>
+    <p>VOUS&nbsp; ÊTES &nbsp; DÉSORMAIS &nbsp; ENREGISTÉ &nbsp;   <br> <br> VOUS&nbsp; POUVEZ &nbsp;VOUS&nbsp; CONNECTER&nbsp; <a href="se-connecter.php"> ICI</a>.</p>
      </section>
  
      <footer>
@@ -63,9 +62,9 @@
          <p>Réaliser par  Mr&nbsp;.MAB dev | Copyright © Cleanlav' 2023 .</p>
       </footer>
     <script>
-       let toggle_menu = document.querySelector('.responsive-menu');
-      let menu = document.querySelector('.menu');
-       toggle_menu.onclick = function(){
+          let toggle_menu = document.querySelector('.responsive-menu');
+          let menu = document.querySelector('.menu');
+          toggle_menu.onclick = function(){
           toggle_menu.classList.toggle('active');
           menu.classList.toggle('responsive')
        }

@@ -583,7 +583,7 @@ i{
 #location h2{
     font-size: 20px;
     color:#ffffff;
-    padding-left: 5%;
+    padding-left: 35%;
     padding-top: 2%;
 }
 #location h2:hover{
@@ -604,7 +604,7 @@ i{
 
 #location .btn-search{
     margin-top: 40%;
-    margin-left: 43%;
+    margin-left: 42%;
     background-color: #ffffff;
     color: #21889f;
     font-size: 13px;
@@ -753,7 +753,7 @@ i{
 }
 #à-propos h5{
     color: #ffffff;
-    font-size: 16px;
+    font-size: 13px;
 }
 #à-propos h5:hover{
     transform: scale(1.1);
@@ -1027,7 +1027,8 @@ footer span{
     font-family:'Franklin Gothic Medium';
 }
 .text-banniere p{
-    font-size: 12px;
+    font-size: 13px;
+    color: #ffffff;
 }
 .button-banniere{
     padding-top: 15px;
@@ -1035,9 +1036,9 @@ footer span{
 .button-banniere a{
     border: solid 1px rgba(0,0,0,0.2);
     padding: 10px;
-    background: rgb(191, 98, 98);
+    background: #000000;
     border-radius: 9px;
-    color: white;
+    color: #1fabc0;
     font-size: 15px;
 }
 /*responsive*/

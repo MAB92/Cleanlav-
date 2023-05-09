@@ -64,7 +64,7 @@
             
           </div>
       </div>
-        <button>S'inscrire</button>
+        <button>S'inscrire</button> 
     </form>
       </section>
     <footer>
@@ -102,20 +102,20 @@
           <div class="banniere" >
                 <div class="text-banniere">
                   <p>
-                    Nous utilisons des cookies (et des technologies similaires) à de nombreuses fins, y compris d’amélioration de votre expérience sur notre site, de publicité et d’analyse. Cliquez sur <br> « Accepter tout » pour accepter ces utilisations. Pour en savoir plus, consultez notre Politique en matière de cookies.
+                    Nous utilisons des cookies et des technologies similaires à de nombreuses fins, y compris d’amélioration de votre expérience sur notre site, de publicité et d’analyse. <br><br> &nbsp; Cliquez sur &nbsp;« Accepter tout » &nbsp;pour accepter ces utilisations. Pour en savoir plus, consultez notre Politique en matière de cookies.
                   </p>
                 </div>
                 <div class="button-banniere">
-                  <a href="?accepte-cookie">Tout accepter</a>
+                  <a href="?accepte-cookie"> Accepter tout</a>
                 </div>
           </div>
       <?php 
       }
       ?> 
    <script>
-      let toggle_menu = document.querySelector('.responsive-menu');
-     let menu = document.querySelector('.menu');
-      toggle_menu.onclick = function(){
+         let toggle_menu = document.querySelector('.responsive-menu');
+         let menu = document.querySelector('.menu');
+         toggle_menu.onclick = function(){
          toggle_menu.classList.toggle('active');
          menu.classList.toggle('responsive')
       }

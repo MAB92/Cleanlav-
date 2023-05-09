@@ -29,7 +29,7 @@ if(isset($_GET['accepte-cookie'])){
         <li><a href="galerie.php">GALERIE</a></li>
         <li><a href="à-propos.php">À PROPOS</a></li>
       </ul> 
-      <a href="index2.php" class="btn-search">Se connecter</a>
+      <a href="index2.php" class="btn-search">Se Connecter</a>
 
       <div class="responsive-menu"></div>
    </header>
@@ -94,20 +94,20 @@ if(isset($_GET['accepte-cookie'])){
           <div class="banniere" >
                 <div class="text-banniere">
                   <p>
-                    Nous utilisons des cookies (et des technologies similaires) à de nombreuses fins, y compris d’amélioration de votre expérience sur notre site, de publicité et d’analyse. Cliquez sur <br> « Accepter tout » pour accepter ces utilisations. Pour en savoir plus, consultez notre Politique en matière de cookies.
+                    Nous utilisons des cookies et des technologies similaires à de nombreuses fins, y compris d’amélioration de votre expérience sur notre site, de publicité et d’analyse. <br><br> &nbsp; Cliquez sur &nbsp;« Accepter tout » &nbsp;pour accepter ces utilisations. Pour en savoir plus, consultez notre Politique en matière de cookies.
                   </p>
                 </div>
                 <div class="button-banniere">
-                  <a href="?accepte-cookie">Tout accepter</a>
+                  <a href="?accepte-cookie"> Accepter tout</a>
                 </div>
           </div>
       <?php 
       }
       ?> 
    <script>
-      let toggle_menu = document.querySelector('.responsive-menu');
-     let menu = document.querySelector('.menu');
-      toggle_menu.onclick = function(){
+         let toggle_menu = document.querySelector('.responsive-menu');
+         let menu = document.querySelector('.menu');
+         toggle_menu.onclick = function(){
          toggle_menu.classList.toggle('active');
          menu.classList.toggle('responsive')
       }

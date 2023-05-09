@@ -36,18 +36,13 @@ if ( ! $stmt->prepare($sql)) {
     die("SQL error: " . $mysqli->error);
 }
 
-$stmt->bind_param("sss",
-                  $_POST["name"],
-                  $_POST["email"],
-                  $password_hash);
+$stmt->bind_param("sss", $_POST["name"], $_POST["email"], $password_hash);
                   
 if ($stmt->execute()) {
-
     header("Location:succès-d'inscription.php");
     exit;
     
 } else {
-    
     if ($mysqli->errno === 1062) {
         die("Adresse e-mail déjà prise");
     } else {
