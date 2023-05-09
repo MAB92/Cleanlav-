@@ -41,9 +41,7 @@
    <section id="contact">
     <h1 class="title">S'inscrire :</h1>
     <form action="processus-d'inscription.php" method="post" id="inscription" novalidate>
-        
         <div class="left-right">
-
             <div class="left">
                 <label for="name">Nom  :</label>
                 <input type="text" id="name" name="name" placeholder="Nom et Prenom :">
