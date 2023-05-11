@@ -50,9 +50,9 @@ if(isset($_GET['accepte-cookie'])){
 
       <div class="responsive-menu"></div>
    </header>
-
    <section id="ajouter">
-         <h1 class="title" ><a href="./ajouter_tarifs.php">Ajouter tarifs:</a></h1>
+         <h1 class="title" >Ajouter tarifs:</h1> 
+         <a href="./ajouter_tarifs.php">Ajouter tarifs:</a>
          <form>
             <table>
                 <tr>
@@ -70,8 +70,8 @@ if(isset($_GET['accepte-cookie'])){
                     <td><?php echo $tarif["machines"];?></td>
                     <td><?php echo $tarif["nom"];?></td>
                     <td>
-                       <button><a href="modifier.php?id=<?php echo $tarifId;?>">Modifer</a></button>
-                       <button><a href="supprimer.php?id=<?php echo $tarifId;?>">Supprimer</a></button>
+                       <a href="modifier.php?id=<?php echo $tarifId;?>">Modifer</a>
+                       <a href="supprimer.php?id=<?php echo $tarifId;?>">Supprimer</a>
                     </td>
                 </tr>
                 <?php endforeach;?>

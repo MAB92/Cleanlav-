@@ -6,7 +6,7 @@
   $types=$result -> fetch_all(MYSQLI_ASSOC);
   
 
-  // var_dump($tarifs);
+    // var_dump($tarifs);
   // var_dump($types);
 ?>
 
@@ -51,7 +51,7 @@ if(isset($_GET['accepte-cookie'])){
         </header>
 
         <section id="ajouter_tarif">
-              <h1 class="title">Ajouter tarifs:</h1>
+              <h1 class="title"> Ajouter tarifs:</h1>
               <form action="processus_ajout_tarif.php" method="post" id="inscription" novalidate>
               <div class="left-right">
                 <div class="left">
@@ -62,7 +62,7 @@ if(isset($_GET['accepte-cookie'])){
                   <label>MACHINES :</label>
                   <input type="text" name= "machines" placeholder="MACHINES :" required >
                   <label>type_id :</label>
-                    <select name="type_id" id="pet-select" required>
+                    <select name="type_id" id="type_id" required>
                     <?php foreach ($types as $type): ?> 
                      <option value="<?php echo $type['id'] ?>"><?php echo $type['nom'] ?></option>
                      <?php endforeach; ?> 

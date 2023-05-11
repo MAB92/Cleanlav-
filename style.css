@@ -687,7 +687,8 @@ i{
 }
 #ajouter form{
     background-color:#70c5d2;
-    margin: auto;
+    margin-top: 5%;
+    margin-left: 4%;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -700,7 +701,7 @@ i{
 #ajouter form:hover{
     transform: scale(1.1);
 }
-#ajouter button{
+#ajouter a{
     font-size: 10px;
     width: fit-content;
     padding: 8px 40px  ;
@@ -792,6 +793,14 @@ i{
     border: 1px solid #0c6a68;
     border-radius: 10px;
 }
+#type_id{
+    font-size: 14px;
+    padding: 10px 0;
+    outline: 0;
+    border: 1px solid #0c6a68;
+    border-radius: 10px;
+}
+
 #à-propos{
     width: 100%;
     background: linear-gradient(45deg);
