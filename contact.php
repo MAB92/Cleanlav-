@@ -52,7 +52,6 @@ if(isset($_GET['accepte-cookie'])){
          </div>
          <button>ENVOYER</button>
          </form>
-         
          <section>
          <div>
          <iframe src="https://www.google.com/maps/embed?pb=!3m2!1sfr!2sfr!4v1678030462519!5m2!1sfr!2sfr!6m8!1m7!1sDQ-nsuESqnsCSDpxeAAjLQ!2m2!1d49.27017364922367!2d1.207324903802301!3f26.284881914434088!4f0.22069868332542342!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

@@ -1,4 +1,18 @@
 <?php
+  $mysqli = require __DIR__ . "/database.php";
+    //recuperer les tarif et tarif type de la bdd
+  $sql ="SELECT * FROM tarif_type" ;
+  $result = $mysqli->query($sql);
+  $types=$result -> fetch_all(MYSQLI_ASSOC);
+  
+  $sql ="SELECT * FROM tarif" ;
+  $result = $mysqli->query($sql);
+  $tarifs=$result -> fetch_all(MYSQLI_ASSOC);
+    // var_dump($tarifs);
+  // var_dump($types);
+?>
+
+<?php
 if(isset($_GET['accepte-cookie'])){
   setcookie('accepte-cookie', true, time() + 1365*24*3600 );
   header('location:./');
@@ -86,9 +100,8 @@ if(isset($_GET['accepte-cookie'])){
                Les machines sont révisées régulièrement <br><br>
                Nous possédons un distributeur de lessive, d'adoucissant, de désinfectant et de détachant. (Made in France)  <br><br>
                Nous avons une centrale de paiement acceptant les billets, monnaies et CB avec et sans contacts.<br><br>
-               Mise à disposition d'un locker Amazon pour retirer vos colis.</p><br>
-
-             
+               Mise à disposition d'un locker Amazon pour retirer vos colis.
+              </p><br>
            </div>
         </div>
       </section>
@@ -133,8 +146,23 @@ if(isset($_GET['accepte-cookie'])){
         <div id="nos-tarifs">
            <h1 class="title"> NOS  TARIFS :</h1>
            <div class="box-container">
-           <div class="box" data-aos="zoom-in-up" data-aos-delay="750">
-              <h4>LAVAGE :</h4>
+            <?php foreach($types as $type):?>
+              <div class="box" data-aos="zoom-in-up" data-aos-delay="750">
+              <h4><?php echo $type["nom"];?></h4>
+              <?php foreach($tarifs as $tarif):?>
+                <?php if($tarif['type_id'] === $type['id']):?>
+                  <p>
+                 <?php echo $tarif["service"];?>  <span><?php echo $tarif ["tarif"];?>  &nbsp;    € &nbsp;&nbsp;( La dose )</span>       
+                <p> <?php echo $tarif["machines"];?></p>  
+                </p>
+                <?php endif;?>
+              <?php endforeach;?>
+             
+           </div>
+         <?php endforeach;?>
+
+           <!-- <div class="box" data-aos="zoom-in-up" data-aos-delay="750">
+              <h4>laver :</h4>
               <p>
                  MACHINES&nbsp;&nbsp;&nbsp; 6.5 KG &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>4.20 €</span>       
                 <p> N°10&nbsp;N°11</p>  
@@ -167,7 +195,7 @@ if(isset($_GET['accepte-cookie'])){
                  <p>N°25</p>
                  <p> ADOUCISSANT &nbsp;&nbsp; <span>1 € (La dose)</span>  </p>                 
                  <p>N°26</p>
-              </p>
+              </p> -->
            </div>
            </div>
         </div>

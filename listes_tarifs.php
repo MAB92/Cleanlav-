@@ -1,4 +1,18 @@
 <?php
+  $mysqli = require __DIR__ . "/database.php";
+    //recuperer les tarif et tarif type de la bdd
+
+  
+  $sql ="SELECT * FROM tarif join tarif_type tt on tt.id=type_id" ;
+  $result = $mysqli->query($sql);
+  $tarifs=$result -> fetch_all(MYSQLI_ASSOC);
+   
+?>
+
+
+
+
+<?php
 if(isset($_GET['accepte-cookie'])){
   setcookie('accepte-cookie', true, time() + 1365*24*3600 );
   header('location:./');
@@ -36,87 +50,35 @@ if(isset($_GET['accepte-cookie'])){
 
       <div class="responsive-menu"></div>
    </header>
-  
-   <section id="location">
-        <h1 class="title"> LOCATION  :</h1>
-        <div class="left">
-            <h2>LOCATION DE SHAMPOUINEUSE​ </h2><br><br>
-            <p> 
-                Vous avez besoin de nettoyer un tapis, les sièges de votre voiture ou encore un matelas ? Louez une shampouineuse professionnelle !
-                Grâce à un système de pulvérisation et d’extraction, cette shampouineuse Kärcher Puzzi 8/1 injecte en profondeur un mélange d’eau et de shampooing pour un nettoyage rapide de vos textiles. 
-            </p>
-        </div> <br><br><br><br> <br><br>
 
-        <section id="galerie">
-         <h1 class="title">SHAMPOUINEUSE &nbsp;&nbsp;Kärcher Puzzi  :</h1>
-         <div class="container">
-            <div class="gallery">
-                <a href="images/img 15.jpg" data-lightbox="models" data-title="Cleanlav">
-                    <img src="images/img 15.jpg">
-                </a>
-                <a href="images/img 16.jpg" data-lightbox="models" data-title="Cleanlav">
-                    <img src="images/img 16.jpg">
-                </a>
-                <a href="images/img 17.jpg " data-lightbox="models" data-title="Cleanlav">
-                    <img src="images/img 17.jpg">
-                </a>
-                <a href="images/img 18.jpg " data-lightbox="models" data-title="Cleanlav">
-                    <img src="images/img 18.jpg">
-                </a>
-                <a href="images/img 19.jpg" data-lightbox="models" data-title="Cleanlav">
-                    <img src="images/img 19.jpg">
-                </a>
-                <a href="images/img 20.jpg " data-lightbox="models" data-title="Cleanlav">
-                    <img src="images/img 20.jpg">
-                </a>
-                <a href="images/img 21.jpg " data-lightbox="models" data-title="Cleanlav">
-                    <img src="images/img 21.jpg">
-                </a>
-                <a href="images/img 22.jpg " data-lightbox="models" data-title="Cleanlav">
-                    <img src="images/img 22.jpg">
-                </a>
-                <a><iframe width="600" height="465" src="https://www.youtube.com/embed/8nPz0HeKnFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
-            </div>
-         </div>
-       </div>
-     </section>
-     <section id="prix">
-        <h1 class="title"> Prix  :</h1>
-          <div class =row>
-             <div class="counter-up">
-                <div class="content">
-
-                  <div class="column">
-                    <div class="box-conter">
-                      <div class="text" >Tarif jourée  &nbsp;&nbsp;</div><br><br><br>
-                      <div class="counter">40</div>
-                      <div class="text">€</div>  
-                    </div>
-                  </div>
-
-                  <div class="column">
-                    <div class="box-conter">
-                      <div class="text">Tarif week-end  </div><br><br><br>
-                      <div class="counter">50</div>
-                      <div class="text">€</div>
-                    </div>
-                  </div>
-
-                  <div class="column">
-                    <div class="box-conter">
-                      <div class="text"> Pastilles<br> de détergent</div>
-                      <div class="counter">5</div>
-                      <div class="text" >€ (les 3)</div>
-                    </div>
-                  </div>
-
-                </div>
-             </div>
-          </div>
-        </section>
-        <a href="mailto:laverie.cleanlav@gmail.com?subject=" class="btn-search">RESERVER</a>
+   <section id="ajouter">
+         <h1 class="title" ><a href="./ajouter_tarifs.php">Ajouter tarifs:</a></h1>
+         <form>
+            <table>
+                <tr>
+                    <th>&nbsp;&nbsp;&nbsp;&nbsp;SERVICES</th>
+                    <th>&nbsp;&nbsp;&nbsp;TARIFS</th><br><br><br>
+                    <th>MACHINES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TYPE</th>
+                    <th>ACTIONS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                </tr>
+                <?php foreach($tarifs as $tarif):?>
+                <?php  $tarifId = $tarif['id'];?>
+                <tr>
+                    <td><?php echo $tarif["service"];?></td> 
+                    <td><?php echo $tarif["tarif"];?></td>
+                    <td><?php echo $tarif["machines"];?></td>
+                    <td><?php echo $tarif["nom"];?></td>
+                    <td>
+                       <button><a href="modifier.php?id=<?php echo $tarifId;?>">Modifer</a></button>
+                       <button><a href="supprimer.php?id=<?php echo $tarifId;?>">Supprimer</a></button>
+                    </td>
+                </tr>
+                <?php endforeach;?>
+            </table>
+          </form>
    </section>
-      </body>
+   </body>
       <footer>
         <div class="contenu-footer">
           <div class="bloc -liens">

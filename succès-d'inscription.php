@@ -29,7 +29,7 @@
    <section id="contact">
     <h1 class="title"> S'enregistrer :</h1>
 
-    <p>VOUS&nbsp; ÊTES &nbsp; DÉSORMAIS &nbsp; ENREGISTÉ &nbsp;   <br> <br> VOUS&nbsp; POUVEZ &nbsp;VOUS&nbsp; CONNECTER&nbsp; <a href="se-connecter.php"> ICI</a>.</p>
+    <p>VOUS&nbsp; ÊTES &nbsp; DÉSORMAIS &nbsp; ENREGISTÉ &nbsp;   <br> <br> VOUSz&nbsp; POUVEZ &nbsp;VOUS&nbsp; CONNECTER&nbsp; <a href="se-connecter.php"> ICI</a>.</p>
      </section>
  
      <footer>

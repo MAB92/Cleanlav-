@@ -476,6 +476,9 @@ i{
     margin-left:  20px;
     text-align:center;
 }
+#nos-tarifs .box-container .box span:hover{
+    color: #b08bad;
+}
 #nos-tarifs .box-container .box{
     box-shadow: 0 5px 10px rgba(0,0,0,0.2) ;
     border-radius: 5px;
@@ -489,7 +492,7 @@ i{
     gap: 12px;
     margin-left: 13% ;
     margin-bottom: 20%;
-    height: 30%;
+    height: 45%;
 }
 #nos-tarifs .box-container .box:hover{
     transform: scale(1.1);
@@ -637,6 +640,7 @@ i{
     padding-bottom: 5%;
    
 }
+
 #location #galerie{
     margin-top: 0;
     padding: 0 ;
@@ -657,12 +661,142 @@ i{
 #location .gallery iframe:hover{
     transform: scale(1.1);
 }
+#ajouter  {
+    width: 100%;
+    background: linear-gradient(45deg);
+    padding-left: 7%;
+    padding-top:20px ;
+    padding-bottom: 50%;
+   
+}
+#ajouter h1{
+    font-size: 17px;
+}
+#ajouter th{
+    font-size: 17px;
+    padding-left: 8%;
+    padding-bottom: 10px;
+    color: #012424;
+}
+#ajouter td{
+    font-size: 16px;
+    color:#ffffff;
+    padding-left: 10%;
+    justify-content: space-between ;
+    padding-bottom:10px;
+}
+#ajouter form{
+    background-color:#70c5d2;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-right: 8%;
+    margin-right: 15%;
+    border-radius: 10px;
+    box-shadow: inset 0 0 1em #29d9d5, 0 0 2em hsl(308, 44%, 51%) ;
+    width: 80%;
+}
+#ajouter form:hover{
+    transform: scale(1.1);
+}
+#ajouter button{
+    font-size: 10px;
+    width: fit-content;
+    padding: 8px 40px  ;
+    background-color:#222;
+    border:1px solid #29d9d5;
+    color:#29d9d5;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+#ajouter form label {
+    font-size: 14px;
+    padding: 10px 0;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+#ajouter form input{
+    font-size: 14px;
+    padding: 10px 0;
+    outline: 0;
+    border: 1px solid #0c6a68;
+    border-radius: 10px;
+}
+
+#ajouter_tarif  {
+    width: 100%;
+    background: linear-gradient(45deg);
+    padding-left: 7%;
+    padding-top:20px ;
+    padding-bottom: 50%;
+   
+}
+#ajouter_tarif h1{
+    font-size: 17px;
+}
+#ajouter_tarif th{
+    font-size: 17px;
+    padding-left: 8%;
+    padding-bottom: 10px;
+   
+}
+#ajouter_tarif td{
+    font-size: 16px;
+    padding-left: 10%;
+    justify-content: space-between ;
+    padding-bottom:10px;
+}
+#ajouter_tarif form{
+    background-color:#70c5d2;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    padding-right: 10%;
+    padding-left: 5%;
+    margin-right: 35%;
+    border-radius: 10px;
+    box-shadow: inset 0 0 1em #29d9d5, 0 0 2em hsl(308, 44%, 51%) ;
+    width: 45%;
+}
+#ajouter_tarif form:hover{
+    transform: scale(1.1);
+}
+#ajouter_tarif button{
+    font-size: 10px;
+    width: fit-content;
+    padding: 8px 40px  ;
+    background-color:#222;
+    border:1px solid #29d9d5;
+    color:#29d9d5;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 20px;
+    margin-left: 9%;
+    margin-top: 3%;
+}
+#ajouter_tarif form label {
+    font-size: 14px;
+    padding: 10px 0;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+#ajouter_tarif form input{
+    font-size: 14px;
+    padding: 10px 0;
+    outline: 0;
+    border: 1px solid #0c6a68;
+    border-radius: 10px;
+}
 #à-propos{
     width: 100%;
     background: linear-gradient(45deg);
     padding-left: 7%;
     padding-top:5px ;
-  
 }
 
 #à-propos .box-container{
@@ -724,7 +858,7 @@ i{
 #à-propos iframe{
     height: 450px;
     width: 450px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     margin-left: 10%;
     border-radius: 15px;
 }

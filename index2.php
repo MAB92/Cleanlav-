@@ -1,20 +1,20 @@
 <?php
 session_start();
-if (isset($_SESSION["user_id"])) {
+if (isset($_SESSION["user"])) {
     
-    $mysqli = require __DIR__ . "/database.php";
+   // $mysqli = require __DIR__ . "/database.php";
     
-    $sql = "SELECT * FROM user
-            WHERE id = {$_SESSION["user_id"]}";
+   // $sql = "SELECT * FROM user
+           // WHERE id = {$_SESSION["user_id"]}";
             
-    $result = $mysqli->query($sql);
+   // $result = $mysqli->query($sql);
     
-    $user = $result->fetch_assoc();
+    $user = $_SESSION["user"];
 }
 ?>
 <?php
 if(isset($_GET['accepte-cookie'])){
-  setcookie('accepte-cookie', true, time() + 1365*24*3600 );
+  setcookie('accepte-cookie', true , time() + 1365*24*3600 , $_SERVER['HTTP_HOST'], );
   header('location:./');
 }
 ?>
@@ -28,7 +28,6 @@ if(isset($_GET['accepte-cookie'])){
     <title>CLEANLAV' Val-De-Reuil</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 <body>
    <header>
@@ -56,6 +55,7 @@ if(isset($_GET['accepte-cookie'])){
         <p><a href="se-connecter"> Se Connecter</a>  &nbsp;  ou  &nbsp;   <a href="s'inscrire.php">S'inscrire</a></p>
     <?php endif; ?>
     </section>
+   
     <footer>
         <div class="contenu-footer">
           <div class="bloc -liens">
@@ -109,6 +109,8 @@ if(isset($_GET['accepte-cookie'])){
         menu.classList.toggle('responsive')
       }
    </script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 </body>
 </html>
     

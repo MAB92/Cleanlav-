@@ -12,7 +12,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $result = $mysqli->query($sql);
     
     $user = $result->fetch_assoc();
-    
     if ($user) {
         
         if (password_verify($_POST["password"], $user["password_hash"])) {
@@ -21,8 +20,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             
             session_regenerate_id();
             
-            $_SESSION["user_id"] = $user["id"];
-            
+            //$_SESSION["user_id"] = $user["id"];
+            $_SESSION["user"] = $user;
+            if ($user["role_id"] === "1")
+            {
+              header("Location:listes_tarifs.php");
+              exit;
+            }
+            else
             header("Location: index2.php");
             exit;
         }
@@ -44,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <body>
    <header>
       <div class="logo">
-        <a href="index.php"><span>Clean</span>lav'</a>
+        <a href="index.php"><span>Clean</span>lav'</a>[]
       </div> 
       <ul class="menu">
       <li><a href="index.php">ACCUEIL</a></li>
