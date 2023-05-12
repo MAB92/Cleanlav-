@@ -1,13 +1,4 @@
 <?php
-if (empty($_POST["services"])) {
-    die("Le service est obligatoire");
-}
-if (empty($_POST["tarifs"])) {
-    die("La tarif est obligatoire");
-}
-if (empty($_POST["machines"])) {
-    die("La machine est obligatoire");
-}
 
 
 mysqli_report(MYSQLI_REPORT_STRICT | MYSQLI_REPORT_ALL);
@@ -15,8 +6,7 @@ mysqli_report(MYSQLI_REPORT_STRICT | MYSQLI_REPORT_ALL);
 
 $mysqli = require __DIR__ . "/database.php";
 
-$sql = "INSERT INTO tarif (tarif, service , type_id, machines)
-        VALUES (?, ?, ? ,?)";
+$sql = "UPDATE tarif SET tarif=?,service=?,type_id=?, machines=? WHERE id = ? ";
         
 $stmt = $mysqli->stmt_init();
 
@@ -26,7 +16,7 @@ if ( ! $stmt->prepare($sql)) {
 //var_dump($_POST["services"]);
 try{
     //place code here that could potentially throw an exception
-    $stmt->bind_param("ssds",$_POST["tarifs"] , $_POST["services"] , $_POST["type_id"] ,$_POST["machines"]);
+    $stmt->bind_param("ssdsi",$_POST["tarifs"] , $_POST["services"] , $_POST["type_id"] ,$_POST["machines"], $_POST['id'] );
                   
 if ($stmt->execute()) {
     header("Location:listes_tarifs.php");
@@ -38,9 +28,4 @@ if ($stmt->execute()) {
    //We will catch ANY exception that the try block will throw
  //var_dump($e);
  }
-
-
-
-
-
-
+?>

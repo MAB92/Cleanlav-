@@ -1,12 +1,18 @@
 <?php
   $mysqli = require __DIR__ . "/database.php";
     //recuperer les tarif et tarif type de la bdd
-
-  
-  $sql ="select t.*, tt.nom from tarif t join tarif_type tt on tt.id=t.type_id" ;
+  $sql ="SELECT * FROM tarif_type" ;
   $result = $mysqli->query($sql);
-  $tarifs=$result -> fetch_all(MYSQLI_ASSOC);
- // var_dump($tarifs) ;
+  $types=$result -> fetch_all(MYSQLI_ASSOC);
+  $sql ="SELECT * FROM tarif where id=?" ;
+  $stmt = $mysqli->prepare($sql);
+  $stmt->bind_param("i", $_GET['id']);
+  $stmt->execute();
+  $result = $stmt->get_result();
+  $tarif = $result->fetch_assoc();
+  //var_dump($tarif);
+    // var_dump($tarifs);
+  // var_dump($types);
 ?>
 
 
@@ -31,51 +37,51 @@ if(isset($_GET['accepte-cookie'])){
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-   <header>
-      <div class="logo">
-        <a href="index.php"><span>Clean</span>lav'</a>
-      </div> 
-      <ul class="menu">
-        <li><a href="index.php">ACCUEIL</a></li>
-        <li><a href="services et tarifs.php">SERVICES ET TARIFS</a></li>
-        <li><a href="fonctionnement.php">FONCTIONNEMENT</a></li>
-        <li><a href="location.php">LOCATION</a></li>
-        <li><a href="contact.php">CONTACT</a></li>
-        <li><a href="galerie.php">GALERIE</a></li>
-        <li><a href="à-propos.php">À PROPOS</a></li>
-      </ul> 
-      <a href="index2.php" class="btn-search">Se Connecter</a>
+        <header>
+            <div class="logo">
+              <a href="index.php"><span>Clean</span>lav'</a>
+            </div> 
+            <ul class="menu">
+              <li><a href="index.php">ACCUEIL</a></li>
+              <li><a href="services et tarifs.php">SERVICES ET TARIFS</a></li>
+              <li><a href="fonctionnement.php">FONCTIONNEMENT</a></li>
+              <li><a href="location.php">LOCATION</a></li>
+              <li><a href="contact.php">CONTACT</a></li>
+              <li><a href="galerie.php">GALERIE</a></li>
+              <li><a href="à-propos.php">À PROPOS</a></li>
+            </ul> 
+            <a href="index2.php" class="btn-search">Se Connecter</a>
 
-      <div class="responsive-menu"></div>
-   </header>
-   <section id="ajouter">
-         <h1 class="title" >Ajouter tarifs :</h1> 
-         <a href="./ajouter_tarifs.php">Ajouter tarifs :</a>
-         <form>
-            <table>
-                <tr>
-                    <th>&nbsp;&nbsp;&nbsp;&nbsp;SERVICES</th>
-                    <th>&nbsp;&nbsp;&nbsp;TARIFS</th><br><br><br>
-                    <th>MACHINES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                    <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TYPE</th>
-                    <th>ACTIONS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                </tr>
-                <?php foreach($tarifs as $tarif):?>
-               
-                <tr>
-                    <td><?php echo $tarif["service"];?></td> 
-                    <td><?php echo $tarif["tarif"];?></td>
-                    <td><?php echo $tarif["machines"];?></td>
-                    <td><?php echo $tarif["nom"];?></td>
-                    <td>
-                       <a href="modifier.php?id=<?php echo $tarif['id']?>">Modifer</a>
-                       <a href="supprimer.php?id=<?php echo $tarif['id'];?>">Supprimer</a>
-                    </td>
-                </tr>
-                <?php endforeach;?>
-            </table>
-          </form>
-   </section>
+            <div class="responsive-menu"></div>
+        </header>
+
+        <section id="ajouter_tarif">
+              <h1 class="title"> Modifier tarif:</h1>
+              <form action="processus_modifier.php" method="post" id="inscription" novalidate>
+              <div class="left-right">
+                <div class="left">
+                  <label>SERVICES :</label>
+                  <input type="text" name= "services" placeholder="SERVICES:" required  value="<?php echo $tarif['service'] ?>">
+                  <label>TARIFS :</label>
+                  <input type="text" name= "tarifs" placeholder="TARIFS :" required  value="<?php echo $tarif['tarif'] ?>" >
+                  <label>MACHINES :</label>
+                  <input type="text" name= "machines" placeholder="MACHINES :" required value="<?php echo $tarif['machines'] ?>">
+                  <label>type_id :</label>
+                  <select name="type_id" id="type_id" required>
+                        <?php foreach ($types as $type): ?>
+                            <option 
+                            value="<?php echo $type['id'] ?>" 
+                            <?php if($type['id'] == $tarif['type_id']) echo "selected"?>
+                            ><?php echo $type['nom'] ?></option>
+                        <?php endforeach; ?> 
+                  </select>
+                  <input type="hidden" name="id" value="<?php echo $tarif['id']?>">
+                </div>
+              </div>
+              <button>Modifier</button>
+              </form>
+        </section>
+
    </body>
       <footer>
         <div class="contenu-footer">
@@ -130,13 +136,6 @@ if(isset($_GET['accepte-cookie'])){
          menu.classList.toggle('responsive')
       }
    </script>
-     <script>
-      $(document).ready(function(){
-        $(".counter").counterUp({
-          delay:10,
-          time:1200
-        });
-      });
-    </script>
+    
     <script src="lightbox-plus-jquery.js"></script>
 </html>
