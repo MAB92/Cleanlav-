@@ -675,14 +675,14 @@ i{
 }
 #ajouter th{
     font-size: 17px;
-    padding-left: 8%;
+    padding-right: 22%;
     padding-bottom: 10px;
     color: #012424;
 }
 #ajouter td{
     font-size: 14px;
     color:#ffffff;
-    padding-left: 10%;
+   padding-left: 2%;
     justify-content: space-between ;
     padding-bottom:10px;
    
@@ -690,23 +690,20 @@ i{
 #ajouter form{
     background-color:#70c5d2;
     margin-top: 5%;
-    margin-left: 4%;
+  
     display: flex;
     flex-direction: column;
     padding: 20px;
-    padding-right: 3%;
-    margin-right: 15%;
     border-radius: 10px;
     box-shadow: inset 0 0 1em #29d9d5, 0 0 2em hsl(308, 44%, 51%) ;
     width: 80%;
+    height: 100%;
 }
-#ajouter form:hover{
-    transform: scale(1.1);
-}
+
 #ajouter a{
     font-size: 10px;
     width: fit-content;
-    padding: 8px 40px  ;
+    padding: 7px 18px  ;
     background-color:#222;
     border:1px solid #29d9d5;
     color:#29d9d5;
@@ -909,6 +906,7 @@ i{
 }
 #à-propos h5:hover{
     transform: scale(1.1);
+    color: #e5b5e6;
 }
 #à-propos{
     margin-top: 100px;
@@ -1019,6 +1017,7 @@ textarea{
     padding: 0 10%;
     width: 100%;
 }
+
 #connexion{
     margin-top: 100px;
     padding: 0 10%;
@@ -1351,8 +1350,9 @@ footer span{
           width: 90%;
     }
     #à-propos h3 {
-        font-size: 10px;
-        margin-right:100px ;
+        font-size: 7px;
+        margin-right:50px ;
+        text-align: center;
     }
     #à-propos form{
         width: 80%;
@@ -1446,6 +1446,18 @@ footer span{
     #location .left h2{
         font-size: 17px;
     } 
+    #ajouter th{
+        font-size: 14px;
+    }
+    #ajouter td{
+        font-size: 12px;
+    }
+    #ajouter form{
+        width:80%;
+    }
+    #ajouter a{
+        font-size: 8px;
+    }
     .responsive-menu{
         width: 75px;
         height: 50px;
@@ -1613,6 +1625,34 @@ footer span{
         margin-left:13% ; 
        
     }
+    #ajouter th{
+        font-size: 10px;
+    }
+    #ajouter td{
+        font-size: 8px;
+    }
+    #ajouter form{
+        width:80%;
+    }
+    #ajouter a{
+        font-size: 5px;
+        padding: 2px 6px  ;
+    }
+    #ajouter_tarif form label {
+        font-size: 8px;
+      
+    }
+    
+    #ajouter_tarif form input{
+        font-size: 8px;
+      
+    }
+    #ajouter_tarif form  select{
+        font-size:8px;
+    }
+    #ajouter_tarif form button{
+        font-size: 8px;
+    }
     .btn-search{
         display:block;
         font-size:9px;
@@ -1672,6 +1712,23 @@ footer span{
         width:40% ;
         padding-left:15px  ;
         display: block;
+    }
+  
+    #contact .left-right label{
+        font-size: 10px;
+    }
+    #contact .left-right input{
+        font-size: 10px;
+    }
+    #contact .left-right button{
+        font-size: 8px;
+    }
+    #contact .left-right i{
+        font-size: 8px;
+    }
+    #contact form button{
+        font-size: 10px;
+
     }
     .contenu-footer{
         width: 100%;
@@ -1849,6 +1906,10 @@ footer span{
     #nos-services .box-container .box h3{
         font-size: 12px; 
     }
+    #nos-services .box-container .box {
+        height: 50%;
+        width: 100%;
+    }
     #nos-services .box-container i{
         font-size: 13px;
     }
@@ -1926,7 +1987,7 @@ footer span{
     }
     #fonctionnement  img {
         height: 13%;
-        width: 50%;
+        width: 20%;
     }
     #fonctionnement .box-container .box{
         height: 40%;
@@ -2004,7 +2065,19 @@ footer span{
         border-radius: 20px;
         margin-left: 20%;
     }
-    
+    #ajouter th{
+        font-size: 10px;
+    }
+    #ajouter td{
+        font-size: 8px;
+    }
+    #ajouter form{
+        width:80%;
+    }
+    #ajouter a{
+        font-size: 4px;
+        padding: 2px 5px  ; ;
+    }
     footer{
         width: 120%;
         background-color: #333;
