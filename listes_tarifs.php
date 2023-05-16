@@ -1,6 +1,6 @@
 <?php
   session_start();
-//Sin l' utilisateur n'est pas connecté ou si il est connecté mais ne possède pas de role "admin", il est redirigé vers la page index2.php
+//Si l' utilisateur n'est pas connecté ou si il est connecté mais ne possède pas de role "admin", il est redirigé vers la page index2.php
   if(!isset($_SESSION['user']) || $_SESSION['user']['role_id'] != 1){
     header('location: index2.php');
     exit;
