@@ -78,14 +78,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
              </div>
              <div class="right">
             <p>Se connecter à Cleanlav :</p><br><br>
-            <button><i class="fa-brands fa-google"></i> Se Connecter avec Google</button><br>
-            <button><i class="fa-brands fa-facebook"></i> Se Connecter avec Facebook</button>
+            <button><i class="fa-brands fa-google"></i> <a href="./s'inscrire.php"> Se Connecter avec Google</a> </button><br>
+            <button><i class="fa-brands fa-facebook"></i> <a href="./s'inscrire.php">Se Connecter avec Facebook</a> </button>
             
           </div>
         </div>
        
         <button> Se Connecter </button> <br>
-        <button> Mot de passe oublier ? </button>
+        <button> <a href="./s'inscrire.php">Mot de passe oublier ?</a> </button>
     </form>
     </section>
 

@@ -49,8 +49,16 @@ if(isset($_GET['accepte-cookie'])){
    <section id="contact">
          <h1 class="title"> Home :</h1>
     <?php if (isset($user)): ?>
-        <p>BIENVENUE  <?= htmlspecialchars($user["name"]) ?></p>
-        <p><a href="se-deconnecter.php">Déconnexion</a></p>
+      <h2>Carte De Fidelité <span>Clean</span>lav'</h2>
+      <div class="wrapper">
+      <div class="profile-top"></div>
+      <div class="profile-bottom">
+        <div class="profile-infos">
+          <div class="main-infos">
+          <p>BIENVENUE <br> <?= htmlspecialchars($user["name"]) ?></p>
+          </div>
+        </div>
+        <p><a href="se-deconnecter.php">Se Déconnecter</a></p>
     <?php else: ?> 
         <p><a href="se-connecter"> Se Connecter</a>  &nbsp;  ou  &nbsp;   <a href="s'inscrire.php">S'inscrire</a></p>
     <?php endif; ?>

@@ -1,4 +1,17 @@
 <?php
+  session_start();
+//Sin l' utilisateur n'est pas connecté ou si il est connecté mais ne possède pas de role "admin", il est redirigé vers la page index2.php
+  if(!isset($_SESSION['user']) || $_SESSION['user']['role_id'] != 1){
+    header('location: index2.php');
+    exit;
+  }
+
+//var_dump($_SESSION);
+
+?>
+
+
+<?php
   $mysqli = require __DIR__ . "/database.php";
     //recuperer les tarif et tarif type de la bdd
 
@@ -44,13 +57,14 @@ if(isset($_GET['accepte-cookie'])){
         <li><a href="galerie.php">GALERIE</a></li>
         <li><a href="à-propos.php">À PROPOS</a></li>
       </ul> 
-      <a href="index2.php" class="btn-search">Se Connecter</a>
+      <a href="se-deconnecter.php" class="btn-search">Se Déconnecter</a>
 
       <div class="responsive-menu"></div>
    </header>
    <section id="ajouter">
          <h1 class="title" >Ajouter tarifs :</h1> 
          <a href="./ajouter_tarifs.php">Ajouter tarifs :</a>
+         <a href="se-deconnecter.php" class="btn-search">Se Déconnecter</a>
          <form>
             <table>
                 <tr>
@@ -60,8 +74,8 @@ if(isset($_GET['accepte-cookie'])){
                     <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TYPE</th>
                     <th>ACTIONS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
                 </tr>
+
                 <?php foreach($tarifs as $tarif):?>
-               
                 <tr>
                     <td><?php echo $tarif["service"];?></td> 
                     <td><?php echo $tarif["tarif"];?></td>
@@ -73,6 +87,7 @@ if(isset($_GET['accepte-cookie'])){
                     </td>
                 </tr>
                 <?php endforeach;?>
+
             </table>
           </form>
    </section>

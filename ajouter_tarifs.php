@@ -3,7 +3,7 @@
     //recuperer les tarif et tarif type de la bdd
   $sql ="SELECT * FROM tarif_type" ;
   $result = $mysqli->query($sql);
-  $types=$result -> fetch_all(MYSQLI_ASSOC);
+  $types=$result->fetch_all(MYSQLI_ASSOC);
   
 
     // var_dump($tarifs);
