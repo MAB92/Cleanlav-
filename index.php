@@ -27,7 +27,8 @@ if(isset($_GET['accepte-cookie'])){
         <li><a href="contact.php">CONTACT</a></li>
         <li><a href="galerie.php">GALERIE</a></li>
         <li><a href="à-propos.php">À PROPOS</a></li>
-      </ul> 
+      </ul>
+       
       <a href="index2.php" class="btn-search">Se Connecter</a>
 
       <div class="responsive-menu"></div>

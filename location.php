@@ -43,7 +43,7 @@ if(isset($_GET['accepte-cookie'])){
             <h2>LOCATION DE SHAMPOUINEUSE​ </h2><br><br>
             <p> 
                 Vous avez besoin de nettoyer un tapis, les sièges de votre voiture ou encore un matelas ? Louez une shampouineuse professionnelle !
-                Grâce à un système de pulvérisation et d’extraction, cette shampouineuse Kärcher Puzzi 8/1 injecte en profondeur un mélange d’eau et de shampooing pour un nettoyage rapide de vos textiles. 
+                Grâce à un système de pulvérisation et d’extraction, cette shampouineuse Kärcher Puzzi 10/1 injecte en profondeur un mélange d’eau et de shampooing pour un nettoyage rapide de vos textiles. 
             </p>
         </div> <br><br><br><br> <br><br>
 
@@ -57,7 +57,7 @@ if(isset($_GET['accepte-cookie'])){
                 <a href="images/img 16.jpg" data-lightbox="models" data-title="Cleanlav">
                     <img src="images/img 16.jpg">
                 </a>
-                <a href="images/img 17.jpg " data-lightbox="models" data-title="Cleanlav">
+                <a href="images/img 25.jpg " data-lightbox="models" data-title="Cleanlav">
                     <img src="images/img 17.jpg">
                 </a>
                 <a href="images/img 18.jpg " data-lightbox="models" data-title="Cleanlav">
@@ -75,7 +75,7 @@ if(isset($_GET['accepte-cookie'])){
                 <a href="images/img 22.jpg " data-lightbox="models" data-title="Cleanlav">
                     <img src="images/img 22.jpg">
                 </a>
-                <a><iframe width="600" height="465" src="https://www.youtube.com/embed/8nPz0HeKnFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+                <a><iframe width="560" height="315" src="https://www.youtube.com/embed/QgZhySu2x9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
             </div>
          </div>
        </div>

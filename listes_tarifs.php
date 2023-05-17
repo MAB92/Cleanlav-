@@ -5,7 +5,6 @@
     header('location: index2.php');
     exit;
   }
-
 //var_dump($_SESSION);
 
 ?>
@@ -13,9 +12,9 @@
 
 <?php
   $mysqli = require __DIR__ . "/database.php";
-    //recuperer les tarif et tarif type de la bdd
 
-  
+    //recuperer toutes les tarif et tarif type de la bdd 
+
   $sql ="select t.*, tt.nom from tarif t join tarif_type tt on tt.id=t.type_id" ;
   $result = $mysqli->query($sql);
   $tarifs=$result -> fetch_all(MYSQLI_ASSOC);
@@ -77,9 +76,9 @@ if(isset($_GET['accepte-cookie'])){
 
                 <?php foreach($tarifs as $tarif):?>
                 <tr>
-                    <td><?php echo $tarif["service"];?></td> 
+                   <td><?php echo htmlspecialchars($tarif["service"]);?></td> 
                     <td><?php echo $tarif["tarif"];?></td>
-                    <td><?php echo $tarif["machines"];?></td>
+                    <td><?php echo htmlspecialchars($tarif["machines"]);?></td>
                     <td><?php echo $tarif["nom"];?></td>
                     <td>
                        <a href="modifier.php?id=<?php echo $tarif['id']?>">Modifer</a>

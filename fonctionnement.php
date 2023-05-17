@@ -38,7 +38,7 @@ if(isset($_GET['accepte-cookie'])){
     <div id="fonctionnement">
         <h1 class="title"> FONCTIONNEMENT :</h1>
         <h5>Profitez de machines simples à utiliser avec différents programmes de lavage selon vos besoins</h5>
-        <h4>Machines à laver</h4>
+        <h4>Machines à laver :</h4>
         <div class="box-container">
            <div class="box" data-aos="zoom-in-up" data-aos-delay="750">
                <img src="images/image1.png">
@@ -76,7 +76,7 @@ if(isset($_GET['accepte-cookie'])){
                <p>Démarrer votre machine en appuyant sur le bouton jaune <br>( START)</p>
            </div>
         </div>
-        <h4>Sèches-linge</h4>
+        <h4>Sèches-linge :</h4>
         <div class="box-container">
             <div class="box" data-aos="zoom-in-up" data-aos-delay="750">
                 <img src="images/image1.png">

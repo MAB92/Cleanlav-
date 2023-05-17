@@ -1,4 +1,21 @@
 <?php
+ require_once __DIR__.'/generateToken.php';
+   $jeton = '';
+   if(isset($_SESSION["_csrf_token"])){
+       $jeton = $_SESSION["_csrf_token"];
+   }
+   else{
+       $jeton = generateToken();
+       $_SESSION["_csrf_token"] = $jeton;
+   }
+   ?>
+
+
+
+
+
+
+<?php
   $mysqli = require __DIR__ . "/database.php";
     //recuperer les tarif et tarif type de la bdd
   $sql ="SELECT * FROM tarif_type" ;
@@ -65,6 +82,7 @@ if(isset($_GET['accepte-cookie'])){
                     <select name="type_id" id="type_id" required>
                     <?php foreach ($types as $type): ?> 
                      <option value="<?php echo $type['id'] ?>"><?php echo $type['nom'] ?></option>
+                     <input type="hidden" name="_csrf_token" value="<?= $jeton ?>">
                      <?php endforeach; ?> 
                     </select>
                 </div>

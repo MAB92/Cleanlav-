@@ -14,7 +14,7 @@ mysqli_report(MYSQLI_REPORT_STRICT | MYSQLI_REPORT_ALL);
 //var_dump($_POST);
 
 $mysqli = require __DIR__ . "/database.php";
-
+//ajouter à tarif 
 $sql = "INSERT INTO tarif (tarif, service , type_id, machines)
         VALUES (?, ?, ? ,?)";
         
