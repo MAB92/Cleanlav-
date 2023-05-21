@@ -76,6 +76,7 @@ if(isset($_GET['accepte-cookie'])){
                     <img src="images/img 22.jpg">
                 </a>
                 <a><iframe width="560" height="315" src="https://www.youtube.com/embed/QgZhySu2x9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+  
             </div>
          </div>
        </div>

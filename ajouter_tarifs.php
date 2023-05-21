@@ -82,9 +82,9 @@ if(isset($_GET['accepte-cookie'])){
                     <select name="type_id" id="type_id" required>
                     <?php foreach ($types as $type): ?> 
                      <option value="<?php echo $type['id'] ?>"><?php echo $type['nom'] ?></option>
-                     <input type="hidden" name="_csrf_token" value="<?= $jeton ?>">
                      <?php endforeach; ?> 
                     </select>
+                    <input type="hidden" name="_csrf_token" value="<?= $jeton ?>">
                 </div>
               </div>
               <button>Ajouter</button>

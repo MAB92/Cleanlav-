@@ -4,8 +4,6 @@ if(isset($_GET['accepte-cookie'])){
   header('location:./');
 }
 ?>
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -48,7 +46,7 @@ if(isset($_GET['accepte-cookie'])){
                                 couettes, etc. Profitez de machines à laver et de sèche-linge dernière génération de grande capacité à des prix abordables.
                                 Vous trouverez des distributeurs automatiques de lessive et autre produits nécessaires au lavage et séchage complet de votre linge.
                             </h5> 
-                            <h4><p2><i class="fa-sharp fa-solid fa-location-dot"></i>31 PLACE DES 4 SAISONS<br>27100 VAL DE REUIL .<br></p2><i class="fa-sharp fa-solid fa-phone"></i>07_67_74_06_52&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-sharp fa-solid fa-at"></i><a href="mailto:laverie.cleanlav@gmail.com?subject=">Envoyer un e-mail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></h4>
+                            <h4><i class="fa-sharp fa-solid fa-location-dot"></i>31 PLACE DES 4 SAISONS<br>27100 VAL DE REUIL .<br><i class="fa-sharp fa-solid fa-phone"></i>07_67_74_06_52&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-sharp fa-solid fa-at"></i><a href="mailto:laverie.cleanlav@gmail.com?subject=">Envoyer un e-mail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></h4>
                           </div>
                 </div>
             </form>
