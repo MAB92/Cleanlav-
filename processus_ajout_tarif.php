@@ -1,3 +1,21 @@
+
+<?php
+session_start();
+//vérifier si le formulaire est valide 
+if (isset($_POST['_csrf_token'])) {//si _csrf_token est defini dans $_POST
+    $tokenFormulaire = $_POST['_csrf_token'];
+    $tokenSession = $_SESSION["_csrf_token"];
+    if($tokenFormulaire != $tokenSession){
+        header('location:./ajouter_tarifs.php?error=csrf');
+        exit;
+    }
+}
+else{//si _csrf_token n'est pas defini dans $_POST
+    header('location:./ajouter_tarifs.php?error=csrf');
+    exit;
+}
+?>
+
 <?php
 if (empty($_POST["services"])) {
     die("Le service est obligatoire");

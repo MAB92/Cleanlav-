@@ -1,6 +1,9 @@
+
 <?php
+session_start();
  require_once __DIR__.'/generateToken.php';
    $jeton = '';
+   //si _csrf_token est défini dans le tableau $_SESSION
    if(isset($_SESSION["_csrf_token"])){
        $jeton = $_SESSION["_csrf_token"];
    }
@@ -9,10 +12,6 @@
        $_SESSION["_csrf_token"] = $jeton;
    }
    ?>
-
-
-
-
 
 
 <?php
@@ -88,6 +87,9 @@ if(isset($_GET['accepte-cookie'])){
                 </div>
               </div>
               <button>Ajouter</button>
+              <?php if(isset($_GET["error"])):?>
+                <p>jéton csrf invalide !</p>
+                  <?php endif;?>
               </form>
         </section>
 

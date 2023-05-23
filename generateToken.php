@@ -7,5 +7,6 @@ function generateToken(){
     //retourner le hash
     return $hash;
 }
+?>
 
 
