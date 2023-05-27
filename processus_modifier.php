@@ -1,5 +1,5 @@
-<?php
 
+<?php
 
 mysqli_report(MYSQLI_REPORT_STRICT | MYSQLI_REPORT_ALL);
 //var_dump($_POST);
@@ -15,7 +15,7 @@ if ( ! $stmt->prepare($sql)) {
 }
 //var_dump($_POST["services"]);
 try{
-    //place code here that could potentially throw an exception
+    // potentially throw an exception
     $stmt->bind_param("ssdsi",$_POST["tarifs"] , $_POST["services"] , $_POST["type_id"] ,$_POST["machines"], $_POST['id'] );
                   
 if ($stmt->execute()) {

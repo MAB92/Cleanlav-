@@ -50,7 +50,7 @@ if(isset($_GET['accepte-cookie'])){
         <h1>TOUS PAIEMENTS ACCEPTES <i class="fa-sharp fa-solid fa-credit-card"></i>  <i class="fa-brands fa-cc-visa"></i><i class="fa-brands fa-cc-mastercard"></i> <i class="fa-sharp fa-solid fa-coins"></i> <i class="fa-solid fa-money-bill-1"></i>  </h1>
        </div>
       </section>
-      </body>
+      
       <footer>
         <div class="contenu-footer">
           <div class="bloc -liens">
@@ -104,4 +104,5 @@ if(isset($_GET['accepte-cookie'])){
          menu.classList.toggle('responsive')
       }
    </script>
+</body>
 </html>

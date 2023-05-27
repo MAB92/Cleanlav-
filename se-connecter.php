@@ -68,11 +68,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <?php if ($is_invalid): ?>
         <h1> Connexion Invalide</h1>
     <?php endif; ?>
+    
     <form method="post">
          <div class="left-right">
          <div class="left">
                 <label for="email">Email :</label>
-                <input type="email" name="email" id="email" placeholder="Nom et Prenom :" value="<?= htmlspecialchars($_POST["email"] ?? "") ?>">
+                <input type="email" name="email" id="email" placeholder="Email :" value="<?= htmlspecialchars($_POST["email"] ?? "") ?>">
                 <label for="password">MOT DE PASSE :</label>
                 <input type="password" name="password" id="password" placeholder="MOT DE PASSE :">
              </div>
@@ -80,10 +81,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <p>Se connecter à Cleanlav :</p><br><br>
             <button><i class="fa-brands fa-google"></i> <a href="./s'inscrire.php"> Se Connecter avec Google</a> </button><br>
             <button><i class="fa-brands fa-facebook"></i> <a href="./s'inscrire.php">Se Connecter avec Facebook</a> </button>
-            
           </div>
         </div>
-       
         <button> Se Connecter </button> <br>
         <button> <a href="./s'inscrire.php">Mot de passe oublier ?</a> </button>
     </form>

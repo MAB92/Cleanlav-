@@ -6,7 +6,6 @@
     exit;
   }
 //var_dump($_SESSION);
-
 ?>
 
 
@@ -67,16 +66,16 @@ if(isset($_GET['accepte-cookie'])){
          <form>
             <table>
                 <tr>
-                    <th>&nbsp;&nbsp;&nbsp;&nbsp;SERVICES</th>
+                    <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SERVICES</th>
                     <th>&nbsp;&nbsp;&nbsp;TARIFS</th><br><br><br>
-                    <th>MACHINES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th>&nbsp;&nbsp;&nbsp;MACHINES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
                     <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TYPE</th>
-                    <th>ACTIONS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ACTIONS</th>
                 </tr>
 
                 <?php foreach($tarifs as $tarif):?>
                 <tr>
-                   <td><?php echo htmlspecialchars($tarif["service"]);?></td> 
+                    <td><?php echo htmlspecialchars($tarif["service"]);?></td> 
                     <td><?php echo $tarif["tarif"];?></td>
                     <td><?php echo htmlspecialchars($tarif["machines"]);?></td>
                     <td><?php echo $tarif["nom"];?></td>
@@ -86,7 +85,6 @@ if(isset($_GET['accepte-cookie'])){
                     </td>
                 </tr>
                 <?php endforeach;?>
-
             </table>
           </form>
    </section>

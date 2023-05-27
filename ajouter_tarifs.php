@@ -15,13 +15,11 @@ session_start();
 
 
 <?php
-  $mysqli = require __DIR__ . "/database.php";
+  $mysqli = require __DIR__ . "/database.php"; 
     //recuperer les tarif et tarif type de la bdd
   $sql ="SELECT * FROM tarif_type" ;
   $result = $mysqli->query($sql);
   $types=$result->fetch_all(MYSQLI_ASSOC);
-  
-
     // var_dump($tarifs);
   // var_dump($types);
 ?>

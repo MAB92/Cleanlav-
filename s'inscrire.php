@@ -38,14 +38,16 @@
 
       <div class="responsive-menu"></div>
    </header>
+
    <section id="contact">
     <h1 class="title">S'inscrire :</h1>
+   <button><a href="se-connecter"> Se Connecter</a></button> 
     <form action="processus-d'inscription.php" method="post" id="inscription" novalidate>
         <div class="left-right">
             <div class="left">
                 <label for="name">Nom  :</label>
                 <input type="text" id="name" name="name" placeholder="Nom et Prenom :">
-                <label for="email">email :</label>
+                <label for="email">Email :</label>
                 <input type="email" id="email" name="email" placeholder="EMAIL :">
                 <label for="password">MOT PASSE :</label>
                 <input type="password" id="password" name="password" placeholder="MOT DE PASSE :">
@@ -65,6 +67,7 @@
         <button>S'inscrire</button> 
     </form>
       </section>
+      
     <footer>
         <div class="contenu-footer">
           <div class="bloc -liens">
