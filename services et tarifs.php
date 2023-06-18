@@ -229,7 +229,7 @@ if(isset($_GET['accepte-cookie'])){
           </div>
       </div>
       <p>Réaliser par  Mr&nbsp;.MAB dev | Copyright © Cleanlav' 2023 .</p>
-   </footer>
+    </footer>
 
    <?php 
        if (!isset($_COOKIE['accepte-cookie'])){

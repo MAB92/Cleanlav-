@@ -16,7 +16,7 @@ session_start();
 
 <?php
   $mysqli = require __DIR__ . "/database.php"; 
-    //recuperer les tarif et tarif type de la bdd
+    //recuperer  toutes les lignes de tarif type de la bdd
   $sql ="SELECT * FROM tarif_type" ;
   $result = $mysqli->query($sql);
   $types=$result->fetch_all(MYSQLI_ASSOC);
@@ -59,7 +59,7 @@ if(isset($_GET['accepte-cookie'])){
               <li><a href="galerie.php">GALERIE</a></li>
               <li><a href="à-propos.php">À PROPOS</a></li>
             </ul> 
-            <a href="index2.php" class="btn-search">Se Connecter</a>
+            <a href="index2.php" class="btn-search">Se Deconnecter</a>
 
             <div class="responsive-menu"></div>
         </header>

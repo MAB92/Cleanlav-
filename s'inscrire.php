@@ -41,7 +41,7 @@
 
    <section id="contact">
     <h1 class="title">S'inscrire :</h1>
-   <button><a href="se-connecter"> Se Connecter</a></button> 
+   <button><a href="se-connecter.php"> Se Connecter</a></button> 
     <form action="processus-d'inscription.php" method="post" id="inscription" novalidate>
         <div class="left-right">
             <div class="left">
@@ -122,7 +122,7 @@
       }
    </script>
   
-  <script src="/js/validation.js" defer></script>
+  <script src="./js/validation.js" defer></script>
   <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
 </body>
 </html>

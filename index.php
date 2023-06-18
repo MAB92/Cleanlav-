@@ -74,7 +74,7 @@ if(isset($_GET['accepte-cookie'])){
             </ul>
           </div>
           <div class="bloc -logo">
-            <a href="index.php"><span>Clean</span>lav'</a>
+            <a href="index.php"><span>Clean</span>lav'</a><br>
             <h4><i class="fa-sharp fa-solid fa-location-dot"></i> 31 PLACE DES 4 SAISONS <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  27100 VAL DE REUIL <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 07_67_74_06_52</h4>
           </div>
         </div>

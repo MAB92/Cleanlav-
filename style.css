@@ -11,7 +11,7 @@ html {
     scroll-padding-top: 9px;
 }
 ::-webkit-scrollbar{
-    width: 10px;
+    width: 14px;
 }
 ::-webkit-scrollbar-thumb{
     background-color: #222;
@@ -73,12 +73,12 @@ header .logo a span {
     bottom: -8px;
     left: 0;
     background-color: #ea70e0;
-    transform-origin: bottom right;
-    transition: 0.7s ease-out;
+    transform-origin: bottom left;
+    transition: 0.5s ease-out;
 }
 .menu li a:hover:after{
     transform:scaleX(1);
-    transform-origin: bottom left;
+    transform-origin: bottom right;
 }
 .btn-search{
     color: #58b2c6;
@@ -130,7 +130,7 @@ header .logo a span {
     color: rgb(255, 255, 255);
     margin-bottom:  10px;
     font-size: 45px;
-    text-align:unset;
+    text-align:center;
     padding: auto;
 }
 #home .box-container {
@@ -142,7 +142,6 @@ header .logo a span {
     margin-top: 60%;
     padding-left: 2%;
     border-radius: 30px;
-    height: fit-content;
     width: 40%;
 }
 #home .box-container:hover{
@@ -628,7 +627,7 @@ i{
     margin-left: 12%;
 
     margin-bottom: 2%;
-    width: 70%;
+    width: 80%;
     height: 100%; 
 }
 
@@ -905,10 +904,7 @@ i{
     color: #ffffff;
     font-size: 13px;
 }
-#à-propos h5:hover{
-    transform: scale(1.1);
-    color: #e5b5e6;
-}
+
 #à-propos{
     margin-top: 100px;
     margin-bottom: 50px;
@@ -1165,7 +1161,7 @@ footer i{
 footer i:hover{
     color: #1fabc0;
 }
-footer .liens li{
+footer .liens li {
     font-size: 15px;
     color:#333;
     text-align: center;
@@ -1173,17 +1169,19 @@ footer .liens li{
     align-items: center;
     padding-right: 17%;
     text-decoration:underline;
+   
 }
+
 footer .media li{
     font-size: 16px;
     color:#333;
     padding-top: 3%;
     display: inline-flex;
-   justify-content: center;
-   
+    justify-content: center;
 }
-footer  li:hover{
+footer li:hover{
     color: #1fabc0;
+    list-style-type: none;
 }
 
 .bloc{
@@ -1292,9 +1290,10 @@ footer span{
      
     }
     #services{
-        margin-right: 17%;
-        padding-right: 12%;
+        margin-left: 4%;
+       
         font-size: 10px;
+        width: 100%;
     }
     #services .btn-search-home-btn{
         display: block;
@@ -1310,12 +1309,12 @@ footer span{
     #nos-services .box-container{
         margin: 65px;
         height:70% ;
-        width:90% ;
+        width:100% ;
         padding-left: 10px  ;
         display: block;
         gap: 5px;
         margin-bottom: 40px;
-        margin-left: 10%;
+        margin-left: 3%;
     }
     #nos-services .box{
         text-align: center;
@@ -1335,9 +1334,9 @@ footer span{
     #nos-tarifs .box-container{
         margin: 65px;
         height:100% ;
-        width:90% ;
+        width:100% ;
         padding-left: 10px  ;
-        margin-left: 15%;
+        margin-left: 3%;
         display: block;
         gap: 5px;
         margin-bottom: 40px;
@@ -1376,6 +1375,7 @@ footer span{
         margin-left: 25%;
         padding-right:20% ;
     }
+   
     #à-propos .left-right h3{
         font-size: 11px;
         display: flex;
@@ -1384,7 +1384,10 @@ footer span{
         font-size: 12px;
     }
     #à-propos .left-right h4{
-        font-size: 12px;
+        font-size: 10px;
+    }
+    #à-propos .left-right a{
+        font-size: 10px;
     }
     #à-propos .box{
         height:50% ;
@@ -1402,7 +1405,7 @@ footer span{
         font-size: 7px;
     }
     #à-propos  i{
-        font-size: 17px;
+        font-size: 10px;
     }
     #à-propos iframe{
           width: 90%;
@@ -1510,6 +1513,7 @@ footer span{
     } 
     #location .left h2{
         font-size: 17px;
+        text-align: start;
     } 
     #ajouter th{
         font-size: 14px;
@@ -1653,6 +1657,10 @@ footer span{
         font-size: 10px;
         display: block;
     }
+    #location .left h2{
+        font-size: 17px;
+        text-align:start;
+    } 
    footer{
     padding-right: 10%;
    }
@@ -1661,7 +1669,7 @@ footer span{
 @media (max-width:1374px) {
    
     #à-propos iframe{
-        width: 60%;
+        width: 90%;
         height: 100%;
     }
 }
@@ -1708,7 +1716,16 @@ footer span{
         font-size: 8px;
       
     }
-    
+    #location .left h2{
+        font-size: 17px;
+        text-align: start;
+    } 
+    #services{
+        margin-left: 4%;
+      
+        font-size: 10px;
+        width: 100%;
+    }
     #ajouter_tarif form input{
         font-size: 8px;
       
@@ -1825,7 +1842,6 @@ footer span{
         font-size: 15px;
         
     }
-  
 }
 @media  (max-width:500px){
     #home .box-container p{
@@ -1836,10 +1852,25 @@ footer span{
     #home .box-container{
         height: 90%;
         width: 50%;
+        padding: 2%;
     }
     #home .box-container h1{
         font-size: 13px;
         text-align: start;
+        
+    }
+    #location .left{
+        width: 70%;
+        height: 100%;
+    }
+    #location .left h2{
+        font-size: 13px;
+        text-align:start;
+        margin-right: 15%;
+    }
+    .paiements h1{
+        font-size: 10px;
+        padding-left: 15%;
     }
     #contact h4{
         font-size: 9px;
@@ -1867,22 +1898,41 @@ footer span{
         height: 80%;
         width: 100%;
     }
-    #à-propos .left-right h3{
+    #à-propos .left-right{
+        width: 100%;
+        height: 100%;
+    }
+    #à-propos .left-right .right h3{
         font-size: 10px; 
-        display: inline;
-        text-align: center;
+        display: block;
+        text-align:center;
     }
     #à-propos .left-right h4{
-        font-size: 10px; 
-        display:grid;
+        font-size: 7px; 
+        display:flex;
+    }
+    #à-propos  .left-right .left iframe{
+        height: 100%;
     }
     #à-propos .left-right i{
         font-size: 16px;
     }
+    #à-propos .left-right .right h4{
+        font-size: 10px; 
+        display: block;  
+    }
+    #à-propos .left-right .right h5{
+        font-size: 10px; 
+        display: block;  
+    }
+    #à-propos .left-right .right a{
+        font-size: 10px;   
+    }
     #fonctionnement .box-container{
-        width: 80%;
+        width: 85%;
         height: 10%;
-       
+        margin-left: 7%;
+        margin-bottom: 10%;
     }
     footer{
         width: 100%;
@@ -1896,7 +1946,7 @@ footer span{
         padding: auto;
     }
     footer .liens li{
-        font-size: 20px;
+        font-size: 15px;
         color:#333;
        display: flex;
         padding-top: 5%;
@@ -1926,13 +1976,13 @@ footer span{
        margin-bottom: 5px;
     }
     footer h4{
-        font-size: 12px;
+        font-size: 10px;
         display: inline-flex;
         margin-top: 5%;
     }
     footer a{
        
-        font-size: 13px;
+        font-size: 9px;
     }
     footer a span{
         font-size: 16px;
@@ -2115,7 +2165,7 @@ footer span{
       width: 100%;
       margin-left: 10%;
     }
-
+   
     #contact form{
       height: 45%;
       width: 100%;
@@ -2149,7 +2199,7 @@ footer span{
         width: 100%;
     }
     #fonctionnement .box-container{
-        width: 100%;
+        width: 30%;
         height: 10%;
     }
     #fonctionnement .box-container h3{
@@ -2182,11 +2232,15 @@ footer span{
     #location .left p{
         font-size: 12px;
     }
+    
     #location .left{
-        width: 100%;
+        width: 50%;
+        height: 100%;
     }
     #location .left h2{
         font-size: 16px;
+        text-align: start;
+        margin-right: 15%;
     }
     #location #galerie{
         width: 100%;
@@ -2230,10 +2284,11 @@ footer span{
         font-size: 7px;
     }
     #à-propos h5{
-        font-size: 7px;
+        font-size: 5px;
     }
     #à-propos h4{
-        font-size: 7px;
+        font-size: 5px;
+       ;
     }
     #à-propos iframe{
           width: 90%;
@@ -2258,6 +2313,7 @@ footer span{
         margin-left: 15%;
         width: 100%;
     }
+   
     #prix .column{
         width: 100%;
     }
@@ -2299,6 +2355,14 @@ footer span{
         text-decoration: none;
     }
  
+    footer .media li{
+        font-size: 10px;
+        color:#333;
+        padding-top: 3%;
+        display: inline-flex;
+       justify-content: center;
+       
+    }
     footer p{
         font-size: 10px; 
         padding-right:15%;

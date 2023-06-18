@@ -48,7 +48,7 @@ if(isset($_GET['accepte-cookie'])){
         </div> <br><br><br><br> <br><br>
 
         <section id="galerie">
-         <h1 class="title">SHAMPOUINEUSE &nbsp;&nbsp;Kärcher Puzzi  :</h1>
+         <h1 class="title">SHAMPOUINEUSE &nbsp;&nbsp; Kärcher Puzzi  :</h1>
          <div class="container">
             <div class="gallery">
                 <a href="images/img 15.jpg" data-lightbox="models" data-title="Cleanlav">

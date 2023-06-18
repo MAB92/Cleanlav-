@@ -84,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
           </div>
         </div>
         <button> Se Connecter </button> <br>
-        <button> <a href="./s'inscrire.php">Mot de passe oublier ?</a> </button>
+        <button> <a href="./s'inscrire.php">S'inscrire</a> </button>
     </form>
     </section>
 
