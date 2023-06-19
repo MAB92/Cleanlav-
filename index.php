@@ -17,7 +17,7 @@ if(isset($_GET['accepte-cookie'])){
 <body>
    <header>
       <div class="logo">
-        <a href="index.php"><span>Clean</span>lav'</a>
+        <a href="à-propos.php"><span>Clean</span>lav'</a>
       </div> 
       <ul class="menu">
         <li><a href="index.php">ACCUEIL</a></li>
