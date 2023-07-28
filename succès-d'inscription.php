@@ -44,6 +44,9 @@
               <li><a href="contact.php">CONTACT</a></li>
               <li><a href="galerie.php">GALERIE</a></li>
               <li><a href="à-propos.php">À PROPOS</a></li>
+              <li><a href="http://localhost/projet_laverie(final-2)/fichiers/mentions%20l%C3%A9gals.pdf"  target="_blank">MENTIONS LÉGALES</a></li>
+              <li><a href="http://localhost/projet_laverie(final-2)/fichiers/politique%20de%20confidentialit%C3%A9.pdf"  target="_blank">POLITIQUE DE CONFIDALITÉ</a></li>
+        </ul>
              </ul>
            </div>
            <div class="bloc -media">
@@ -71,5 +74,6 @@
     </script>
      <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
      <script src="./js/validation.js" defer></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
  </body>
  </html>

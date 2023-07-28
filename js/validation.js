@@ -1,4 +1,4 @@
-const validation = new JustValidate("#signup");
+const validation = new JustValidate("s'inscrire.php");
 
 validation
     .addField("#name", [
@@ -23,7 +23,7 @@ validation
                            return json.available;
                        });
             },
-            errorMessage: "email already taken"
+            errorMessage: "email deja utilisé"
         }
     ])
     .addField("#password", [
@@ -43,7 +43,7 @@ validation
         }
     ])
     .onSuccess((event) => {
-        document.getElementById("signup").submit();
+        document.getElementById("s'inscrire").submit();
     });
     
     

@@ -81,6 +81,9 @@ if(isset($_GET['accepte-cookie'])){
               <li><a href="contact.php">CONTACT</a></li>
               <li><a href="galerie.php">GALERIE</a></li>
               <li><a href="à-propos.php">À PROPOS</a></li>
+              <li><a href="http://localhost/projet_laverie(final-2)/fichiers/mentions%20l%C3%A9gals.pdf"  target="_blank">MENTIONS LÉGALES</a></li>
+              <li><a href="http://localhost/projet_laverie(final-2)/fichiers/politique%20de%20confidentialit%C3%A9.pdf"  target="_blank">POLITIQUE DE CONFIDALITÉ</a></li>
+        </ul>
           </ul>
         </div>
         <div class="bloc -media">
@@ -96,7 +99,7 @@ if(isset($_GET['accepte-cookie'])){
             <h4><i class="fa-sharp fa-solid fa-location-dot"></i> 31 PLACE DES 4 SAISONS <br>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  27100 VAL DE REUIL <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 07_67_74_06_52</h4>
           </div>
       </div>
-      <p>Réaliser par  Mr&nbsp;.MAB dev | Copyright © Cleanlav' 2023 .</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Réaliser par  Mr&nbsp;.MAB dev | Copyright © Cleanlav' 2023 .</p>
    </footer>
    <?php 
        if (!isset($_COOKIE['accepte-cookie'])){

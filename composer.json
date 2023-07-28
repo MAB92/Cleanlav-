@@ -1,13 +1,13 @@
 {
-    "name": "amine/projet_laverie15",
-    "description": "projet projet laverie",
+    "name": "amine/cleanlav",
+    "description": "cleanlav",
     "type": "projet",
     "require": {
         "phpunit/phpunit": "^9.6"
     },
     "autoload": {
         "psr-4": {
-            "Amine\\projet_laverie9\\": "src/"
+            "Amine\\cleanlav\\": "src/"
         }
     },
     "authors": [

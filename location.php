@@ -97,27 +97,25 @@ if(isset($_GET['accepte-cookie'])){
 
                   <div class="column">
                     <div class="box-conter">
-                      <div class="text">Tarif week-end  </div><br><br><br>
-                      <div class="counter">50</div>
-                      <div class="text">€</div>
-                    </div>
-                  </div>
-
-                  <div class="column">
-                    <div class="box-conter">
                       <div class="text"> Pastilles<br> de détergent</div>
                       <div class="counter">5</div>
-                      <div class="text" >€ (les 3)</div>
+                      <div class="text">&nbsp;&nbsp;&nbsp; € &nbsp;&nbsp;&nbsp;( les 3 )</div>
                     </div>
                   </div>
-
                 </div>
              </div>
           </div>
         </section>
-        <a href="mailto:laverie.cleanlav@gmail.com?subject=" class="btn-search">RESERVER</a>
+        <br><br><br>
+        
+        <!-- Début de widget en ligne Calendly -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/m-aminebennani82/cleanlav?primary_color=5ab8d6" style="min-width:520px;max-height:700px; border-radius: 15px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Fin de widget en ligne Calendly -->
+<br><br><br><br><br><br><br><br><br>
+<a href="mailto:laverie.cleanlav@gmail.com?subject=" class="btn-search">RESERVATION AVEC EMAIL</a>
    </section>
-      </body>
+      
       <footer>
         <div class="contenu-footer">
           <div class="bloc -liens">
@@ -130,6 +128,9 @@ if(isset($_GET['accepte-cookie'])){
               <li><a href="contact.php">CONTACT</a></li>
               <li><a href="galerie.php">GALERIE</a></li>
               <li><a href="à-propos.php">À PROPOS</a></li>
+              <li><a href="http://localhost/projet_laverie(final-2)/fichiers/mentions%20l%C3%A9gals.pdf"  target="_blank">MENTIONS LÉGALES</a></li>
+              <li><a href="http://localhost/projet_laverie(final-2)/fichiers/politique%20de%20confidentialit%C3%A9.pdf"  target="_blank">POLITIQUE DE CONFIDALITÉ</a></li>
+        </ul>
             </ul>
           </div>
           <div class="bloc -media">
@@ -145,7 +146,7 @@ if(isset($_GET['accepte-cookie'])){
             <h4><i class="fa-sharp fa-solid fa-location-dot"></i> 31 PLACE DES 4 SAISONS <br>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  27100 VAL DE REUIL <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 07_67_74_06_52</h4>
           </div>
         </div>
-        <p>Réaliser par  Mr&nbsp;.MAB dev | Copyright © Cleanlav' 2023 .</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Réaliser par  Mr&nbsp;.MAB dev | Copyright © Cleanlav' 2023 .</p>
      </footer>
      <?php 
        if (!isset($_COOKIE['accepte-cookie'])){
@@ -180,4 +181,7 @@ if(isset($_GET['accepte-cookie'])){
       });
     </script>
     <script src="lightbox-plus-jquery.js"></script>
+
+    
+</body>
 </html>
