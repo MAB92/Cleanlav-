@@ -48,7 +48,7 @@ if(isset($_GET['accepte-cookie'])){
         </div> <br><br><br><br> <br><br>
 
         <section id="galerie">
-         <h1 class="title">SHAMPOUINEUSE &nbsp;&nbsp; Kärcher Puzzi  :</h1>
+         <h1 class="title">SHAMPOUINEUSE &nbsp; Kärcher Puzzi  :</h1>
          <div class="container">
             <div class="gallery">
                 <a href="images/img 15.jpg" data-lightbox="models" data-title="Cleanlav">
@@ -105,15 +105,18 @@ if(isset($_GET['accepte-cookie'])){
                 </div>
              </div>
           </div>
+          <br><br><br>
+          <a href="mailto:laverie.cleanlav@gmail.com?subject=" class="btn-search" style="margin-left:40%;">RESERVATION AVEC EMAIL</a>  
         </section>
-        <br><br><br>
         
+   <section id="location">
         <!-- Début de widget en ligne Calendly -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/m-aminebennani82/cleanlav?primary_color=5ab8d6" style="min-width:520px;max-height:700px; border-radius: 15px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/m-aminebennani82/cleanlav?primary_color=5ab8d6"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <!-- Fin de widget en ligne Calendly -->
-<br><br><br><br><br><br><br><br><br>
-<a href="mailto:laverie.cleanlav@gmail.com?subject=" class="btn-search">RESERVATION AVEC EMAIL</a>
+            <br><br><br><br><br><br><br><br><br>
+   </section> 
+         
    </section>
       
       <footer>

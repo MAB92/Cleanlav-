@@ -47,7 +47,7 @@ if(isset($_GET['accepte-cookie'])){
             <textarea name="Message" id="" cols="30" rows="10"required placeholder="Votre MESSAGE :" required></textarea>
           </div>
           <div class="right">
-            <h4><p><i class="fa-sharp fa-solid fa-location-dot"></i>31 PLACE DES 4 SAISONS<br>27100 VAL DE REUIL<br></p><i class="fa-sharp fa-solid fa-phone"></i>07_67_74_06_52&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-sharp fa-solid fa-at"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> <a href="mailto:laverie.cleanlav@gmail.com?subject=">Envoyer un e-mail<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></h4>
+            <h4><p><i class="fa-sharp fa-solid fa-location-dot"></i>31 PLACE DES 4 SAISONS<br>27100 VAL DE REUIL<br></p><i class="fa-sharp fa-solid fa-phone"></i>07_67_74_06_52&nbsp;&nbsp;&nbsp;<br><i class="fa-sharp fa-solid fa-at"></i><a href="mailto:laverie.cleanlav@gmail.com?subject=">Envoyer un e-mail<br></a></h4>
           </div>
          </div>
          <button>ENVOYER</button>
