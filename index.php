@@ -8,7 +8,7 @@ if(isset($_GET['accepte-cookie'])){
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
     <meta name="viewport" content="width=device-width" >
     <title>CLEANLAV' Val-De-Reuil</title>
     <link rel="stylesheet" href="./style.css">
@@ -41,7 +41,7 @@ if(isset($_GET['accepte-cookie'])){
                 couettes, etc. Profitez de machines à laver et de sèche-linge dernière génération de grande capacité à des prix abordables.
                 Vous trouverez des distributeurs automatiques de lessive et autre produits nécessaires au lavage et séchage complet de votre linge.
             </p>
-            <h1><i class="fa-sharp fa-solid fa-location-dot"></i> 31 PLACE DES 4 SAISONS <br>27100 VAL DE REUIL </h1>
+            <h1><i class="fa-sharp fa-solid fa-location-dot"></i> 31 PLACE DES 4 SAISONS <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 27100 &nbsp;VAL DE REUIL </h1>
       </div> 
       <a href="à-propos.php" class="btn-search-home-btn"> EN SAVOIR PLUS</a>
       </section>
@@ -78,7 +78,7 @@ if(isset($_GET['accepte-cookie'])){
           </div>
           <div class="bloc -logo">
             <a href="index.php"><span>Clean</span>lav'</a><br>
-            <h4><i class="fa-sharp fa-solid fa-location-dot"></i> 31 PLACE DES 4 SAISONS <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  27100 VAL DE REUIL <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 07_67_74_06_52</h4>
+            <h4><i class="fa-sharp fa-solid fa-location-dot"></i> 31 PLACE DES 4 SAISONS<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  27100 VAL DE REUIL <br><br> Tel: 07_67_74_06_52</h4>
           </div>
         </div>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Réaliser par  Mr&nbsp;.MAB dev | Copyright © Cleanlav' 2023 .</p>
@@ -109,3 +109,4 @@ if(isset($_GET['accepte-cookie'])){
    </script>
 </body>
 </html>
+

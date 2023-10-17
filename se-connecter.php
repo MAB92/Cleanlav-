@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>CLEANLAV' Val-De-Reuil</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -79,15 +79,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
              </div>
              <div class="right">
             <p>Se connecter à Cleanlav :</p><br><br>
-            <button><i class="fa-brands fa-google"></i> <a href="./s'inscrire.php"> Se Connecter avec Google</a> </button><br>
-            <button><i class="fa-brands fa-facebook"></i> <a href="./s'inscrire.php">Se Connecter avec Facebook</a> </button>
+            <button ><i class="fa-brands fa-google"></i> <br><a href="./s'inscrire.php"> Se Connecter avec Google</a> </button><br>
+            <button><i class="fa-brands fa-facebook"></i> <br><a href="./s'inscrire.php">Se Connecter avec Facebook</a> </button>
           </div>
         </div>
         <button> Se Connecter </button> <br>
-        <button> <a href="./s'inscrire.php">S'inscrire</a> </button>
+        <button> <a href="./s'inscrire.php">&nbsp;&nbsp;&nbsp;&nbsp;S'inscrire&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>   </button>
     </form>
     </section>
-
+    <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br>
     <footer>
         <div class="contenu-footer">
           <div class="bloc -liens">

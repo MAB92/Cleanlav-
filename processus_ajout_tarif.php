@@ -26,7 +26,7 @@ if (empty($_POST["tarifs"])) {
 if (empty($_POST["machines"])) {
     die("La machine est obligatoire");
 }
-if (($_POST["tarifs"])<= 0){
+if (($_POST["tarifs"])< 0){
     die("tarif doit être superieur à 0");
 }
 
@@ -46,10 +46,10 @@ if ( ! $stmt->prepare($sql)) {
 //var_dump($_POST["services"]);
 try{
     //place code here that could potentially throw an exception
-    $stmt->bind_param("ssds",$_POST["tarifs"] , $_POST["services"] , $_POST["type_id"] ,$_POST["machines"]);
+    $stmt->bind_param("ssds",$_POST["tarifs"] , $_POST["services"] , $_POST["type_id"]  ,$_POST["machines"]);
                   
 if ($stmt->execute()) {
-    header("Location:listes_tarifs.php");
+    header("Location:./listes_tarifs.php");
     exit;
 }
  }

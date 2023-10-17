@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=lato:wght@100;200;400;500&display=swap');
 *{
    margin: 0;
    padding: 0;
    box-sizing:border-box ;
-   font-family: 'Raleway', sans-serif;
+   font-family: 'lato', sans-serif;
 }
 html {
     font-size: 62.5%;
@@ -136,40 +136,32 @@ header .logo a span {
 #home .box-container {
     border: 0.5px solid #278786;
     box-shadow: inset 0 0 1em #cbeded, 0 0 2em hsl(308, 44%, 51%) ;
-    margin-left: 30%;
-    margin-right: 37%;
-    margin-bottom: 1%;
     margin-top: 60%;
-    padding-left: 2%;
     border-radius: 30px;
     width: 40%;
 }
 #home .box-container:hover{
     transform: scale(1.1);
+  
 }
 #home .box-container p{
     font-size: 20px;
-    margin-left: 15%;
-    padding-right: 20%;
+    
    
 }
 #home .box-container p:hover{
-    color:#ffffff;
+    color:#e5dfdf;
     transform: scale(1.1);
     
 }
 #home .box-container h2{
     margin-top: 3%;
     font-size: 28px;
-    margin-left: 9%;
-    padding-right: 17%;
     margin-bottom: 3%;
     color: white;
 }
 #home .box-container h1{
     font-size: 20px;
-    margin-left: 7%;
-    padding-right: 18%;
     margin-bottom: 5%;
     color: white;
     text-align: center;
@@ -185,7 +177,6 @@ header .logo a span {
 #home .btn-search-home-btn{ 
     margin-bottom: 60%;
     margin-top: 20px;
-    margin-right: 7%;
     padding-right: 25%;
     color: #dae7ea;
     background-color: #1e808f;
@@ -613,12 +604,7 @@ i{
     color: #21889f;
     font-size: 13px;
 }
-#location .btn-search:hover{
-    background-color: #06667b;
-    color: #ffffff;
-    transform: scale(1.1); 
-    font-size: 13px;
-}
+
 
 #location .left{
     box-shadow: inset 0 0 1em #29d9d5, 0 0 2em hsl(308, 44%, 51%) ;
@@ -1107,7 +1093,7 @@ iframe {
     transform: scale(1.1);
   }
   .profile-top {
-    padding-left: 5%;
+    margin-left: 5%;
     height: 70%;
     width:90%;
     background-image: url("./images/img\ 3.png");
@@ -1166,7 +1152,7 @@ footer a span{
    font-size: 20px;
 }
 footer i{
-   font-size: 23px;
+   font-size: 22px;
 }
 footer i:hover{
     color: #1fabc0;
@@ -1214,8 +1200,8 @@ footer  h4{
    text-align: center;
    font: size 16px;
    color: #ffffff;
-   padding-left: 15%;
- 
+   padding-left: 25%;
+   
 }
 footer  h5{
     color: #49c3c3;
@@ -1256,6 +1242,9 @@ footer span{
 }
 /*responsive*/
 @media (max-width:1261px) {
+    #home{
+        height: auto;
+    }
     header .menu{
         display: none;
     }
@@ -1264,13 +1253,22 @@ footer span{
         font-size:12px;
         margin-right: 8%;
     }
-  
+
     #home .box-container h2{
-        font-size: 12px;
+        font-size: 28px;
         text-align: center;
-        margin-left: 25%;
     }
-   
+    #home .box-container i{
+        font-size: 17px;
+        margin-left: 0;
+       
+    }
+    #home .box-container h1{
+        text-align: center;
+        font-size: 13px;
+        margin-left: 25%;
+        padding-right:22% ;
+    }
     #home .box-container .home-btn{
         display: block; 
     } 
@@ -1282,10 +1280,10 @@ footer span{
     }
     #home .box-container p{
         text-align: center;
-        font-size: 13px;
-        margin-left: 23%;
-       
+        font-size: 19px;
+        margin-left: 1%;
     }
+   
     .paiements i{
         font-size: 24px;
     }
@@ -1296,12 +1294,407 @@ footer span{
     #home .box-container{
         margin-top: 40%;
         height: 100%;
-        width:30%;
+        width:60%;
      
     }
     #services{
         margin-left: 4%;
+        font-size: 10px;
+        width: 100%;
+    }
+    #services .btn-search-home-btn{
+        display: block;
+        font-size: 10px;
+        text-align: center;
+        margin-right:17%;
+    }
+    #services .btn-search-home-btn:hover{
+        color: #e5b5e6;
+        background-color: #010b0d;
+        display: block;
+    }
+    #nos-services .box-container{
+        margin: 65px;
+        height:100% ;
+        width:100% ;
+        padding-left: 10px  ;
+        display: block;
+        gap: 5px;
+        margin-bottom: 40px;
+        margin-left: 3%;
+    }
+    #nos-services .box{
+        text-align: center;
+        padding:0 0 ;
+    }
+    #nos-services .box-container p{
+        text-align: center;
+        padding-right: 60px ;
+        font-size: 15px;
+    }
+    #nos-services .box-container .box h3{
+        font-size: 18px;
+    }
+    #nos-services .box-container .box i{
+        font-size: 25px;
+    }
+    #nos-tarifs .box-container{
+        margin: 65px;
+        height:100% ;
+        width:100% ;
+        padding-left: 10px  ;
+        margin-left: 3%;
+        display: block;
+        gap: 5px;
+        margin-bottom: 40px;
+    }
+    #nos-tarifs .box{
+        text-align: center;
+    }
+    #nos-tarifs .box-container p{
+        text-align: center;
+        padding-right: 60px ;
+        font-size: 10px;
+    }
+    #contact{
+        width: 100%;
+        height: 100%;
+    }
+    #contact .btn-search{
+        display: block;
+        font-size: 13px;
+        text-align: center;
+        background-color: #33aaa8;
+        padding-left: 20px;
+        margin-left: 80px  ;
+        margin-right: 60px  ;
+    }
+    #contact .btn-search:hover{
+        transform: scale(0.9);
+        color: #065763;
+    }
+    #contact.left-right{
+        margin-bottom: 40%;
+    }
+    #contact h4{
+        font-size: 12px;
+    }
+    #contact p{
+        font-size: 12px;  
+    }
+  
+   
+    #à-propos .left-right h3{
+        font-size: 11px;
+        display: flex;
+    }
+    #à-propos .left-right h5{
+        font-size: 12px;
+    }
+    #à-propos .left-right h4{
+        font-size: 10px;
+    }
+    #à-propos .left-right a{
+        font-size: 10px;
+    }
+    #à-propos .box{
+        height:50% ;
+        width:100% ;
+        padding-left: 15px  ;
+        display: block;
+        gap: 5px;
        
+    }
+    #à-propos .box:hover{
+        transform: scale(1.1);
+    }
+   
+    #à-propos h4{
+        font-size: 7px;
+    }
+    #à-propos  i{
+        font-size: 10px;
+    }
+    #à-propos iframe{
+          width: 90%;
+    }
+    #à-propos h3 {
+        font-size: 7px;
+        margin-right:50px ;
+        text-align: center;
+    }
+    #à-propos form{
+        width: 80%;
+       
+    }
+    #à-propos .box-container .box h2{
+        font-size: 13px;
+    }
+ 
+    #à-propos .box-container .box p{
+        font-size: 14px;
+    }
+    #à-propos .box-container .box {
+        height:100% ;
+        width:100% ;
+       
+    }
+    #à-propos .box-container{
+        margin: 20%;
+        height:100% ;
+        width:70% ;
+        display: block;
+      
+    }
+    .contenu-footer a{
+        padding-right:20%;
+    }
+    
+    #fonctionnement{
+        height: 100%;
+        width: 100%;
+    }
+    #fonctionnement h4{
+        font-size: 18px;
+    }
+    #fonctionnement h5{
+        font-size: 17px;
+    }
+    #fonctionnement h3{
+        font-size: 15px;
+        padding-right: 10%;
+        color: #1fabc0;
+    }
+    #fonctionnement .box-container {
+        height:30% ;
+        width:70% ;
+        padding-left: 15px  ;
+        display: block;
+        gap: 5px;
+        margin-bottom: 5px;
+        font-size:12px;
+        margin-left: 13%;
+    }
+    #fonctionnement .box-container p{
+        font-size: 12px;
+    }
+    #fonctionnement  .box{
+        height:100% ;
+        width:100% ;
+        padding-left: 15px  ;
+        display: block;
+        gap: 5px;
+        margin-bottom: 5px;
+        font-size:12px;
+       
+      
+    }
+    #fonctionnement .box img{
+        height: 50%;
+        width: 23%;
+    }
+    .box-container .btn-search{
+        display: inline;
+        padding-right: 20%;
+    }
+    .img-desc{
+        flex-direction: column ;
+        width: 100%;
+    }
+    .img-desc p{
+      text-align: center ;
+      font-size: 15px;
+      width: 100%;
+    }
+    .img-desc a{
+        display:inline;
+    }
+    #location .btn-search{
+        display:inline;
+    }
+    #location #galerie iframe {
+        height: 80%;
+        width: 60%;
+    }
+    #location .left p{
+        font-size: 15px;
+    } 
+    #location .left h2{
+        font-size: 17px;
+        text-align: center;
+        margin-right: 35%;
+    } 
+    #ajouter th{
+        font-size: 14px;
+    }
+    #ajouter td{
+        font-size: 12px;
+    }
+    #ajouter form{
+        width:80%;
+    }
+    #ajouter a{
+        font-size: 8px;
+    }
+    .responsive-menu{
+        width: 75px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+    }
+    .responsive-menu::after{
+        position: absolute;
+        content: "";
+        height: 3px;
+        background-color: #29d9d5;
+        width: 29px;
+        box-shadow: 0 10px 0 #29d9d5;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+    .responsive-menu.active::after{
+        box-shadow: #29d9d5;
+        transform: rotate(45deg);
+    }
+    .responsive-menu::before{
+        position: absolute;
+        content: "";
+        height: 3px;
+        background-color: #29d9d5;
+        width: 29px;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+    .responsive-menu.active::before{
+        transform: rotate(-45deg);
+    }
+    header .menu.responsive{
+        display:flex ;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        flex-direction: column;
+        background-color: #222;
+        align-items:start;
+        animation: animate-menu 1s forwards;
+        font-size: 5px;
+    }
+    header .menu.responsive li{
+        margin: 10px;
+        width:  140px;
+        font-size: 5px;
+    }
+    
+    .contenu-footer{
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    footer p{
+        font-size: 12px; 
+        padding-left:35%;
+    }
+    footer h5{
+       font-size:12px; 
+       padding-left:22%;
+    }
+    footer h4{
+        
+        font-size: 12px;
+    }
+    footer a{
+        display:block ;
+        font-size: 12px;
+    }
+    footer a span{
+        font-size: 12px;
+    }
+    footer i{
+        font-size: 12px;
+    }
+   
+   .text-banniere p{
+    font-size:1px;
+   }
+   .button-banniere{
+    padding-top: 15px;
+   }
+    .button-banniere a{
+    border: solid 1px rgba(0,0,0,0.2);
+    padding: 10px;
+    background: rgb(191, 98, 98);
+    border-radius: 9px;
+    color: white;
+    font-size: 10px;
+    display: block;
+    text-align: center;
+   }
+
+    @keyframes animate-menu {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(10%);
+        }
+    }
+}
+
+@media (max-width:1006px){
+    header .menu{
+        display: none;
+    }
+    .btn-search{
+        display:block;
+        font-size:12px;
+        margin-right: 5%;
+    }
+    #home .box-container{
+        margin-top: 40%;
+        height: 100%;
+        width:40%;
+     
+    }
+    #home .box-container h2{
+        font-size: 20px;
+        text-align: center;
+    }
+   
+    #home .box-container .home-btn{
+        display: block; 
+    } 
+
+    .home-btn{
+        display: block;
+    }
+   
+    #home .box-container p{
+        text-align: center;
+        font-size: 18px;
+    }
+   
+    #home .box-container h1{
+        text-align: center;
+        font-size: 13px;
+        margin-left: 15%;
+      
+    }
+    #home .box-container i{
+        font-size: 15px;
+    }
+    .paiements i{
+        font-size: 24px;
+    }
+    .paiements h1{
+        font-size: 16px;
+        justify-content: space-between;
+    }
+  
+    #services{
+        margin-left: 4%;
         font-size: 10px;
         width: 100%;
     }
@@ -1379,12 +1772,7 @@ footer span{
     #contact p{
         font-size: 12px;  
     }
-    #home .box-container h1{
-        text-align: center;
-        font-size: 10px;
-        margin-left: 25%;
-        padding-right:20% ;
-    }
+  
    
     #à-propos .left-right h3{
         font-size: 11px;
@@ -1575,18 +1963,17 @@ footer span{
     header .menu.responsive{
         display:flex ;
         position: absolute;
-        top: 40px;
+        top: 20px;
         right: 0;
         flex-direction: column;
         background-color: #222;
         align-items:start;
         animation: animate-menu 1s forwards;
-       
+        width: 160px;
     }
     header .menu.responsive li{
         margin: 10px;
-        width:125px;
-        font-size: 13px;
+        font-size: 9px;
     }
     
     .contenu-footer{
@@ -1642,8 +2029,6 @@ footer span{
             transform: translateY(10%);
         }
     }
-}
-@media (max-width:1006px){
     footer p{
         font-size: 12px; 
         padding-right:15%;
@@ -1677,21 +2062,34 @@ footer span{
 }
 
 @media (max-width:1374px) {
+    
    
     #à-propos iframe{
         width: 90%;
         height: 100%;
     }
 }
-@media (max-width:981px){
+@media (max-width:981px) {
+    header .menu.responsive li{
+        margin: 10px;
+        width:120px;
+        font-size: 11px;
+    }
+    #home{
+        height: auto;
+    }
     #home .box-container{
-        margin-left: 40%;
-        width: 50%;
+        width: 40%;
         height: 80%;
+        margin-top: 100px;
+    }
+    .btn-search{
+        font-size:9px;
+        margin-left:0 ;  
     }
     #home .box-container p{
         text-align: center;
-        font-size: 12px;
+        font-size: 15px;
        
     }
     #home .box-container i{
@@ -1702,11 +2100,11 @@ footer span{
         
     }
     #home .box-container h2{
-        font-size: 11px;
+        font-size: 16px;
     }
     #home .btn-search-home-btn{
         font-size:9px;
-        margin-left:13% ; 
+        margin-left:1% ; 
        
     }
     #ajouter th{
@@ -1728,7 +2126,7 @@ footer span{
     }
     #location .left h2{
         font-size: 17px;
-        text-align: start;
+        text-align: center;
     } 
     #services{
         margin-left: 4%;
@@ -1806,7 +2204,10 @@ footer span{
         display:block;
         margin: 10%;
     }
-  
+    #contact{
+        width: 100%;
+        height: 120%;
+       }
     #contact .left-right label{
         font-size: 10px;
     }
@@ -1823,51 +2224,119 @@ footer span{
         font-size: 10px;
 
     }
+    #contact.left-right{
+        margin-bottom: 40%;
+    }
     .contenu-footer{
         width: 100%;
        
     }
-    
+    footer .liens li{
+        font-size: 12px;
+        color:#333;
+      
+        padding-top: 5%;
+        padding-right: 37%;
+       
+    }
+
+    footer .media li{
+        font-size: 15px;
+        color:#333;
+        padding-top: 3%;
+       padding-left: 15%;
+      
+       
+    }
     footer p{
         font-size: 12px; 
-        padding-right:15%;
+        padding-left: 30%;
     }
     footer h5{
        font-size:10px; 
-      
+      padding-left: 17%;
     }
     footer h4{
-      
-        font-size: 7px;
-        margin-top: 10%;
+        font-size: 8px;
+        margin-top: 2%;
+       
     }
     footer a{
+        font-size: 12px;
        
-        font-size: 15px;
     }
     footer a span{
-        font-size: 14px;
+        font-size: 12px;
     }
     footer i{
-        font-size: 15px;
-        
+        font-size: 12px;
+        padding-left:0 ;
+    }
+    header .menu.responsive li{
+        margin: 10px;
+        width:120px;
+        font-size: 11px;
     }
 }
 @media  (max-width:500px){
+    header .menu.responsive li{
+        margin: 10px;
+        width:120px;
+        font-size: 11px;
+    }
+    #home .btn-search-home-btn{
+        font-size: 10px;
+        margin-left: 5%;
+     }
+    #home .box-container h2{
+        font-size: 18px;
+        text-align: center;
+      
+    }
+    #home .box-container{
+        margin-top: 30%;
+        height: 100%;
+        width: 60%;
+    }
+    #home{
+        width: 120%;
+    }
+   
+    #home .box-container .home-btn{
+        display: block;
+    } 
+    .home-btn{
+        display: block;
+    }
+    #home h4{
+        font-size: 16px;
+    }
+    #home .box-container h1{
+        font-size: 12px;
+        text-align: center;
+    }
+    #home .box-container i{
+        font-size: 12px;
+       margin-left: 0;
+    }
+    #home .box-container h3{
+        font-size: 8px;
+        color:white;
+    }
+   
     #home .box-container p{
         text-align: center;
         font-size: 12px;
-    
+        color:rgb(255, 255, 255);
+        line-height: 1.5;
+        margin-left: 5%;
     }
-    #home .box-container{
-        height: 90%;
-        width: 50%;
-        padding: 2%;
+    #home .box-container a{
+        margin-left: 5%; 
     }
-    #home .box-container h1{
-        font-size: 13px;
-        text-align: start;
-        
+
+    #location {
+         margin-right: 20%;
     }
     #location .left{
         width: 70%;
@@ -1875,7 +2344,7 @@ footer span{
     }
     #location .left h2{
         font-size: 13px;
-        text-align:start;
+        text-align:center;
         margin-right: 15%;
     }
     .paiements h1{
@@ -1884,9 +2353,18 @@ footer span{
     }
    
     #prix .btn-search{
-        margin-left: 10%;
+        margin-left: 1%;
     }
-
+    .calendly-inline-widget{
+        min-width:90%;
+        max-height:60%;
+        border-radius:15px;
+        margin-left:10%;
+    }
+    #contact{
+        width: 100%;
+        height: 120%;
+       }
     #contact h4{
         font-size: 9px;
         display: inline;
@@ -1904,14 +2382,18 @@ footer span{
     #contact i{
         font-size: 14px; 
     }
+    #contact.left-right{
+        margin-bottom: 40%;
+    }
     .wrapper{
         height: 20%;
-        width: 100%;
-      
+        width: 60%;
+        margin-bottom: 50%;
+        margin-left: 25%;
     }
     .profile-top{
         height: 80%;
-        width: 100%;
+        width: 50%;
     }
     #à-propos .left-right{
         width: 100%;
@@ -1931,6 +2413,7 @@ footer span{
     }
     #à-propos .left-right i{
         font-size: 16px;
+        margin-left: 5%;
     }
     #à-propos .left-right .right h4{
         font-size: 10px; 
@@ -1953,68 +2436,104 @@ footer span{
         font-size: 17px;
     }
     #prix .btn-search{
-        margin-left: 25%;
+        margin-left: 5%;
     }
-
+    #contact{
+        width: 100%;
+        height: 100%;
+       }
+       #ajouter th{
+        font-size: 10px;
+    }
+    #ajouter td{
+        font-size: 8px;
+    }
+    #ajouter form{
+        width:120%;
+    }
+    #ajouter a{
+        font-size: 4px;
+        padding: 2px 5px;
+    }
     footer{
         width: 100%;
         background-color: #333;
         font-size: 12px;
         color: #fefefe;
     }
-    .contenu-footer{
+  .contenu-footer{
         width: 100%;
-        margin: auto;
-        padding: auto;
+       
     }
     footer .liens li{
-        font-size: 15px;
+        font-size: 12px;
         color:#333;
-       display: flex;
+      
         padding-top: 5%;
+        padding-right: 37%;
        
-        padding-right: 17%;
-        text-decoration:underline;
     }
 
     footer .media li{
         font-size: 15px;
         color:#333;
         padding-top: 3%;
-        display: inline-flex;
-       justify-content: center;
+       padding-left: 15%;
+      
        
     }
-    
     footer p{
-        font-size: 10px; 
+        font-size: 12px; 
         padding-left: 30%;
-        display: inline;
-        text-align: center;
-        margin:auto
     }
     footer h5{
-       font-size:13px; 
-       margin-bottom: 5px;
+       font-size:10px; 
+      padding-left: 17%;
     }
     footer h4{
-        font-size: 10px;
-        display: inline-flex;
-        margin-top: 5%;
+        font-size: 8px;
+        margin-top: 2%;
+       
     }
     footer a{
+        font-size: 12px;
        
-        font-size: 9px;
     }
     footer a span{
-        font-size: 16px;
+        font-size: 12px;
     }
     footer i{
-        font-size: 15px;
-        display: inline;
+        font-size: 12px;
+        padding-left:0 ;
+    }
+    header .menu.responsive li{
+        margin: 10px;
+        width:120px;
+        font-size: 11px;
     }
 }
-@media (max-width:490px){
+@media  (max-width:570px){
+    #ajouter th{
+        font-size: 10px;
+    }
+    #ajouter td{
+        font-size: 8px;
+    }
+    #ajouter form{
+        width:120%;
+    }
+    #ajouter a{
+        font-size: 4px;
+        padding: 2px 5px;
+    }
+}
+@media (max-width:440px){
+    header .menu.responsive li{
+        margin: 10px;
+        width: 100px;
+        font-size: 8px;
+    }
+ 
     .responsive-menu{
         width: 10%;
         height: 50%;
@@ -2023,7 +2542,7 @@ footer span{
         justify-content: center;
         position: relative;
         cursor: pointer;
-        font-size: 10px;
+        font-size: 8px;
     }
     .responsive-menu::after{
         position: absolute;
@@ -2051,6 +2570,7 @@ footer span{
     .responsive-menu.active::before{
         transform: rotate(-45deg);
     }
+  
     header .logo a {
         font-size: 15px;
         color: #29d9d5;
@@ -2075,27 +2595,21 @@ footer span{
     .btn-search{
         display:block;
         font-size: 10px;
-        margin-left: 10%;
+        margin-left: 3%;
     }
     #home .btn-search-home-btn{
-        font-size: 10px;
+        font-size: 12px;
+        margin-left: 5%;
      }
     #home .box-container h2{
-        font-size: 12px;
+        font-size: 16px;
         text-align: center;
-        margin-left: 25%;
+      
     }
-    #home .box-container p{
-        text-align: center;
-        font-size: 11px;
-        margin-left: 25%;
-        text-align: center;
-    }
-   
     #home .box-container{
-       margin-top: 30%;
-        height: 90%;
-        width: 40%;
+        margin-top: 30%;
+        height: 100%;
+        width: 60%;
     }
     #home{
         width: 120%;
@@ -2107,37 +2621,39 @@ footer span{
     .home-btn{
         display: block;
     }
-    #home h4{
-        font-size: 16px;
-    }
+  
     #home .box-container h1{
-        font-size: 10px;
-        text-align: start;
+        font-size: 11px;
+        text-align: center;
     }
     #home .box-container i{
-        font-size: 11px;
+        font-size: 12px;
+       margin-left: 0;
+       padding-right: 0;
     }
     #home .box-container h3{
-        font-size: 10px;
+        font-size: 8px;
         color:white;
     }
+   
     #home .box-container p{
         text-align: center;
-        font-size: 14px;
-        margin-left: 25%;
-        text-align: start;
-    }
-    #home .box-container p{
-        padding:1rem 0;
-        font-size: 10px;
+        font-size: 15px;
         color:rgb(255, 255, 255);
-        line-height: 1;
-        padding: 10px;
-        margin-left: 10px;
-        text-align:center;
+        line-height: 1.5;
+        margin-left: 5%;
     }
-    #home .box-container h2{
-        font-size: 13px;
+    #home .box-container a{
+        margin-left: 5%; 
+    }
+    .paiements h1{
+        font-size: 9px; 
+        padding-left: 25%;
+       
+    }
+    .paiements i{
+        font-size: 10px;
+        margin-left: 1%;
     }
     #services .btn-search-home-btn{
         display: block;
@@ -2147,14 +2663,16 @@ footer span{
      }
 
     #services {
-        margin-left: 10%;
-        width: 100%;  
+        margin-left: 15%;
+        width: 100%; 
+        padding-top: 5%; 
     }
     #services p{
         font-size: 12px;
     }
     #nos-services .box-container{
         width: 100%;
+        margin-left: 15%;
     }
     #nos-services .box-container .box h3{
         font-size: 12px; 
@@ -2175,6 +2693,12 @@ footer span{
     }
     #nos-tarifs .box-container{
         width: 100%;
+        margin-left: 15%;
+    }
+    #nos-services .row{
+        width: 100%;
+        height: 50%;
+        margin-left: 5%;
     }
     #nos-tarifs .box-container p{
         font-size: 8px;
@@ -2186,9 +2710,12 @@ footer span{
       width: 100%;
       margin-left: 10%;
     }
-   
+    #contact{
+        width: 100%;
+        height: 120%;
+       }
     #contact form{
-      height: 45%;
+      height:max-content;
       width: 100%;
       margin-left: 60px  ;
     }
@@ -2205,23 +2732,36 @@ footer span{
         transform: scale(0.9);
         color: #065763;
     }
-    #contact h4{
-        font-size: 9px;
-        display: inline;
-       
+    #contact .right h4{
+        font-size: 8px;
+     
     }
-    #contact p{
-        font-size: 7px;
+   
+    #contact .right p{
+        font-size: 12px;
         display: flex;
     }
+    #contact .left-right.left{
+        margin-bottom: 40%;
+    }
   
+    .wrapper{
+        height: 50%;
+        width: 650%;
+        margin-bottom: 100%;
+    }
+    .profile-top{
+        height: 80%;
+        width: 50%;
+    }
     iframe {
         height: 60%;
         width: 100%;
     }
     #fonctionnement .box-container{
-        width: 30%;
-        height: 10%;
+        width: 100%;
+        height: 100%;
+        margin-left: 9%;
     }
     #fonctionnement .box-container h3{
         font-size: 10px;
@@ -2255,23 +2795,50 @@ footer span{
     }
     
     #location .left{
-        width: 50%;
+        width: 100%;
         height: 100%;
+        margin-left: 10%;
     }
     #location .left h2{
-        font-size: 16px;
-        text-align: start;
-        margin-right: 15%;
+        font-size: 13px;
+        text-align: center;
+       margin-right: 30%;
     }
+    .calendly-inline-widget{
+        width:100%;
+        height:100%;
+        border-radius:15px;
+        padding-right: 30%;
+       
+     }
     #location #galerie{
         width: 100%;
-        margin-left: 1%;
+        height: 100%;
+        padding-right: 10%;
     }
-
+    .calendly-inline-widget{
+        width:100%;
+        height:100%;
+        border-radius:15px;
+        padding-right: 30%;
+       
+     }
+  
+    #prix .box-conter{
+        margin-right: 12%;
+    }
     #prix a{
-       margin-left: 35%;
-    }
-   
+        margin-left: 35%;
+        font-size: 12px;
+     }
+     #prix a:hover{
+         margin-left: 35%;
+         font-size: 10px;
+      }
+     #prix .btn-search{
+         font-size: 8px;
+         margin-left: 20%;
+      }
     #à-propos .box-container {
         height:100% ;
         width:100% ;
@@ -2340,6 +2907,19 @@ footer span{
         width: 100%;
     }
    
+    #à-propos .left-right .right i{
+        font-size: 10px;
+        margin-left: 0;
+        padding-left: 0;
+        margin-right: 0;
+        
+    }
+    #à-propos .left-right .right h4 {
+        font-size: 6px;
+    }
+    #à-propos .left-right .right a{
+        font-size: 6px;
+    }
     #prix .column{
         width: 100%;
     }
@@ -2355,18 +2935,45 @@ footer span{
         width: 100%;
         margin-left: 15%;
     }
-    #ajouter th{
+    #ajouter tr{
         font-size: 10px;
+    }
+    #ajouter th{
+        font-size: 8px;
     }
     #ajouter td{
         font-size: 8px;
     }
     #ajouter form{
-        width:80%;
+        width:120%;
     }
     #ajouter a{
-        font-size: 4px;
-        padding: 2px 5px  ; ;
+        font-size: 8px;
+       
+        margin: auto;
+    }
+    #ajouter_tarif .left{
+        width: 100%;
+        margin-left: 5%;
+    }
+    #ajouter_tarif .left-right{
+        width: 100%;
+    }
+    #ajouter_tarif form{
+        width: 100%;
+        margin-left: 7%;
+    }
+    #ajouter_tarif .btn-search{
+        margin-left: 35%;
+    }
+    .wrapper{
+        height: 30%;
+        width: 70%;
+       margin-bottom: 100%;
+    }
+    .profile-top{
+        height: 80%;
+        width: 50%;
     }
     footer{
         width: 120%;
@@ -2385,40 +2992,49 @@ footer span{
         padding: 30px 0 px;
         text-decoration: none;
     }
- 
+   
     footer .media li{
         font-size: 10px;
         color:#333;
         padding-top: 3%;
-        display: inline-flex;
-       justify-content: center;
-       
+        padding-left: 1%; 
+    }
+   
+    footer .media li{
+        font-size: 10px;
+        color:#333;
+        padding-top: 3%; 
     }
     footer p{
-        font-size: 10px; 
-        padding-right:15%;
+        font-size: 12px; 
+        padding-left:10%;
     }
     footer h5{
-       font-size:12px; 
-       padding-left:27%;
+       font-size:10px; 
+       margin-left:50%;
     }
     footer h4{
-       
-        font-size: 7px;
+        margin-top: 5px;
+        line-height: 2;
+        font-size: 10px;
+        display: flex;
+        text-align: center;
+        margin-left:20%;
     }
     footer a{
         display:block ;
-        font-size: 9px;
-        padding-right: 30%;
+        font-size: 8px;
+        margin-left: 45%;
     }
     footer i{
         font-size: 10px;
+        margin-right: 11%;
     }
     footer  h3 {
         margin-right: 30%; 
     }
     footer span{
-        font-size:10px ;
+        font-size:12px ;
        
     }
     .text-banniere p{
@@ -2446,7 +3062,1010 @@ footer span{
         }
         
     }
+    header .menu.responsive li{
+        margin: 10px;
+        width:120px;
+        font-size: 11px;
+    }
+}   
+    @media (max-width:360px){
+        header .menu.responsive li{
+            margin: 10px;
+            width:120px;
+            font-size: 11px;
+        }
+        .responsive-menu{
+            width: 10%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+            font-size: 10px;
+        }
+        .responsive-menu::after{
+            position: absolute;
+            content: "";
+            height: 3px;
+            background-color: #29d9d5;
+            width: 19px;
+            box-shadow: 0 10px 0 #29d9d5;
+            transform: translateY(-10px);
+            transition: 0.5s;
+        }
+        .responsive-menu.active::after{
+            box-shadow: #29d9d5;
+            transform: rotate(45deg);
+        }
+        .responsive-menu::before{
+            position: absolute;
+            content: "";
+            height: 3px;
+            background-color: #29d9d5;
+            width: 19px;
+            transform: translateY(10px);
+            transition: 0.5s;
+        }
+        .responsive-menu.active::before{
+            transform: rotate(-45deg);
+        }
+        header .logo a {
+            font-size: 15px;
+            color: #29d9d5;
+        }
+        header .logo a span {
+            color:#ffffff; 
+            font-size: 15px;
+        }
+        .menu {
+            display: flex;
+            align-items: center;
+           
+        }
+        .menu a{
+            font-size: 10px;
+        }
+        header .menu{
+            display: none;
+            width: 30%;
+            font-size: 10px;
+        }
+        .btn-search{
+            display:block;
+            font-size: 10px;
+            margin-right: 7%;
+        }
+        #home .btn-search-home-btn{
+            font-size: 10px;
+            margin-left: 2%;
+         }
+        #home .box-container h2{
+            font-size: 12px;
+            text-align: center;
+           
+        }
+        #home .box-container{
+            margin-top: 30%;
+            height: 80%;
+            width: 60%;
+        }
+        #home{
+            width: 120%;
+        }
+       
+        #home .box-container .home-btn{
+            display: block;
+        } 
+        .home-btn{
+            display: block;
+        }
+        #home h4{
+            font-size: 16px;
+        }
+        #home .box-container h1{
+            font-size: 10px;
+            text-align:center;
+            margin-left: 7%;
+        }
+        #home .box-container i{
+            font-size: 9px;
+            margin-right:0;
+            margin-left: 15%;
+            text-align:start;
+        }
+        #home .box-container h3{
+            font-size: 10px;
+            color:white;
+        }
+        #home .box-container p{
+            font-size: 10px;
+            color:rgb(255, 255, 255);
+            line-height: 1.5;
+            margin-left: 5%;
+        }
+      
+        #home .box-container h2{
+            font-size: 13px;
+            text-align: center;
+        }
+        .paiements h1{
+            font-size: 8px; 
+            text-align: center;
+        }
+        .paiements i{
+            font-size: 8px; 
+        }
+        #services .btn-search-home-btn{
+            display: block;
+            margin-right:17%;
+            font-size: 6px;
+            text-align:center;
+         }
+         #nos-services{
+            width: 120%;
+         }
+         #nos-services .row{
+            width: 80%;
+            height: 90%;
+            margin-left:1%;
+         }
+        #services {
+            padding-top: 5%;
+            margin-left: 1%;
+            width: 100%; 
+            height: 90%; 
+        }
+        #services p{
+            font-size: 12px;
+        }
+        #nos-services .box-container{
+            width: 90%;
+            margin-left: 5%;
+        }
+        #nos-services .box-container .box h3{
+            font-size: 12px; 
+        }
+        #nos-services .box-container .box {
+            height: 50%;
+            width: 100%;
+        }
+        #nos-services .box-container i{
+            font-size: 13px;
+        }
+        #nos-services .box-container p{
+            text-align:center;
+           
+        }
+        #nos-tarifs .box-container h4{
+            font-size: 15px;
+        }
+        #nos-tarifs .box-container{
+            width: 100%;
+            margin-left: 15%;
+        }
+        #nos-tarifs .box-container p{
+            font-size: 8px;
+        }
+        #nos-services .text{
+            font-size: 14px;
+        }
+        #nos-services .column{
+          width: 100%;
+          margin-left: 10%;
+        }
+       #contact{
+        width: 100%;
+        height: 100%;
+       }
+        #contact form{
+          height: 55%;
+          width: 100%;
+          margin-left: 10% ;
+        }
+        #contact .btn-search{
+            display: block;
+            font-size: 13px;
+            text-align: center;
+            background-color: #33aaa8;
+            padding-left: 20px;
+            margin-left: 80px  ;
+            margin-right: 60px  ;
+        }
+        #contact .btn-search:hover{
+            transform: scale(0.9);
+            color: #065763;
+        }
+    
+        #contact.right h4{
+            font-size: 9px;
+            display: inline;
+        }
+        #contact p{
+            font-size: 14px;
+            display: flex;
+        }
+        #contact iframe{
+            margin-left: 12%;
+            height: 60%;
+            width: 100%;
+        }
+        #contact.left{
+            margin-bottom: 40%;
+        }
+       
+        #fonctionnement .box-container{
+            width: 100%;
+            height: 90%;
+            margin-left: 7%;
+        }
+        #fonctionnement .box-container h3{
+            font-size: 10px;
+        }
+        #fonctionnement h4{
+            font-size: 15px;
+            color: #ffffff;
+            margin-top: 10%;
+        }
+        #fonctionnement h3{
+            font-size: 15px;
+            padding-right: 10%;
+            color: #1fabc0;
+        }
+        #fonctionnement h5{
+            font-size: 12px;
+            color: #ffffff;
+            margin: auto;
+            margin-bottom: 3%;
+            padding-left: 10%;
+        }
+        #fonctionnement  img {
+            height: 13%;
+            width: 20%;
+        }
+        #fonctionnement .box-container .box{
+            height: 40%;
+        }
+        #location .left p{
+            font-size: 12px;
+        }
+        
+        #location .left{
+            width: 70%;
+            height: 100%;
+            margin-left: 22%;
+        }
+        #location .left h2{
+            font-size: 12px;
+            text-align: center;
+            padding-left: 20%;
+        }
+        #location #galerie{
+            width: 90%;
+            margin-right: 12%;
+        }
+        #prix .box-conter{
+            margin-right: 12%;
+        }
+        #prix a{
+           margin-left: 37%;
+           font-size: 12px;
+        }
+        #prix a:hover{
+            margin-left: 35%;
+            font-size: 10px;
+         }
+        #prix .btn-search{
+            font-size: 8px;
+         }
+        .calendly-inline-widget{
+           width:100%;
+           height:100%;
+           border-radius:15px;
+           padding-right: 30%;
+          
+        }
+        #à-propos .box-container {
+            height:100% ;
+            width:100% ;
+            gap: 5px;
+            margin-bottom: 40px;
+         
+        }
+        #à-propos .box{
+            height:100% ;
+            width:100% ;
+            display:grid;
+        }
+        #à-propos .box  h2{
+            font-size: 8px;
+         
+        }
+        #à-propos .box p{
+            font-size: 9px;
+            
+        }
+        #à-propos .box-container:hover{
+            transform: scale(1.1);
+        }
+        #à-propos .box-container .box {
+            width: 100%;
+            height: 100%;
+            font-size: 8px;
+           
+        }
+      
+        #à-propos h5{
+            font-size: 6px;
+        }
+        #à-propos h4{
+            font-size: 5px;
+           ;
+        }
+        #à-propos iframe{
+            width: 90%;
+             
+        }
+        #à-propos h3 {
+            font-size: 7px;
+            margin-right: 22px ;
+            
+        }
+        #à-propos  i{
+            font-size: 15px;
+        }
+        #à-propos form{
+            width: 100%;
+            margin-right: 27%; 
+        }
+        #à-propos .left-right{
+            transform: scale(1.1);
+            border: 2px solid #042424;
+            color: transparent;
+            border-radius: 20px;
+            margin-left: 1%;
+            width: 120%;
+            height: 90%;
+            font-size: 15px;
+        }
+        #à-propos .left-right .right i{
+            font-size: 10px;
+            margin-left: 0;
+            padding-left: 0;
+            margin-right: 0;
+            
+        }
+        #à-propos .left-right .right h4 {
+            font-size: 6px;
+        }
+        #à-propos .left-right .right h5 {
+            font-size: 10px;
+        }
+        #à-propos .left-right .right h3 {
+            font-size: 10px;
+        }
+        #à-propos .left-right .right a{
+            font-size: 6px;
+            margin-left: 2%;
+        }
+        #prix .column{
+            width: 100%;
+        }
+        #prix .column .text{
+            font-size: 14px;
+        }
+    
+        #prix .column .counter{
+            font-size: 12px;
+        }
+    
+        #galerie .container{
+            width: 100%;
+            margin-left: 15%;
+        }
+        #ajouter th{
+            font-size: 6px;
+            padding-left: 0;
+      
+        }
+        #ajouter tr{
+            font-size: 6px;
+        }
+        #ajouter td{
+            font-size: 7px;
+        }
+        #ajouter form{
+            width:120%;
+        }
+        #ajouter a{
+            font-size: 7px;
+            margin: auto;
+        }
+        #galerie .container{
+            width: 100%;
+            margin-left: 15%;
+        }
 
-}
+        #ajouter_tarif .left{
+            width: 100%;
+            margin-left: 5%;
+        }
+        #ajouter_tarif .left-right{
+            width: 100%;
+        }
+        #ajouter_tarif form{
+            width: 100%;
+            margin-left: 7%;
+        }
+        #ajouter_tarif .btn-search{
+            margin-left: 35%;
+        }
+        
+        footer{
+            width: 120%;
+            background-color: #333;
+            padding: 30px 0;
+            font-size: 12px;
+            color: #fefefe;
+        }
+        .contenu-footer{
+            width: 80%;
+            height: 60%;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            font-size: 12px;
+            padding: 30px 0 px;
+            text-decoration: none;
+        }
+       
+        footer .media li{
+            font-size: 10px;
+            color:#333;
+            padding-top: 3%;
+            padding-left: 1%; 
+        }
+       
+        footer .media li{
+            font-size: 10px;
+            color:#333;
+            padding-top: 3%; 
+        }
+        footer p{
+            font-size: 10px; 
+            padding-left:15%;
+        }
+        footer h5{
+           font-size:10px; 
+           margin-left:50%;
+        }
+        footer h4{
+            margin-top: 5px;
+            line-height: 2;
+            font-size: 8px;
+            display: flex;
+            text-align: center;
+            margin-left:25%;
+        }
+        footer a{
+            display:block ;
+            font-size: 8px;
+            margin-left: 45%;
+        }
+        footer i{
+            font-size: 10px;
+            margin-right: 11%;
+        }
+        footer  h3 {
+            margin-right: 30%; 
+        }
+        footer span{
+            font-size:12px ;
+           
+        }
+      
+        .text-banniere p{
+            font-size: 10px;
+          
+        }
+        .button-banniere{
+            padding-top: 15px;
+        }
+        .button-banniere a{
+            border: solid 1px rgba(0,0,0,0.2);
+            display: block;
+            background: rgb(191, 98, 98);
+            border-radius: 9px;
+            color: white;
+            font-size: 8px;
+        }
+        header .menu.responsive li{
+            margin: 10px;
+            width:12px;
+            font-size: 11px;
+        }
+    }
+    
+    @media (max-width:320px){
+        header .menu.responsive li{
+            margin: 10px;
+            width:120px;
+            font-size: 11px;
+        }
+        .responsive-menu{
+            width: 10%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+            font-size: 10px;
+        }
+        .responsive-menu::after{
+            position: absolute;
+            content: "";
+            height: 3px;
+            background-color: #29d9d5;
+            width: 19px;
+            box-shadow: 0 10px 0 #29d9d5;
+            transform: translateY(-10px);
+            transition: 0.5s;
+        }
+        .responsive-menu.active::after{
+            box-shadow: #29d9d5;
+            transform: rotate(45deg);
+        }
+        .responsive-menu::before{
+            position: absolute;
+            content: "";
+            height: 3px;
+            background-color: #29d9d5;
+            width: 19px;
+            transform: translateY(10px);
+            transition: 0.5s;
+        }
+        .responsive-menu.active::before{
+            transform: rotate(-45deg);
+        }
+        header .logo a {
+            font-size: 15px;
+            color: #29d9d5;
+        }
+        header .logo a span {
+            color:#ffffff; 
+            font-size: 15px;
+        }
+        .menu {
+            display: flex;
+            align-items: center;
+           
+        }
+        .menu a{
+            font-size: 10px;
+        }
+        header .menu{
+            display: none;
+            width: 30%;
+            font-size: 10px;
+        }
+        .btn-search{
+            display:block;
+            font-size: 10px;
+            margin-right: 7%;
+        }
+        #home .btn-search-home-btn{
+            font-size: 10px;
+         }
+        #home .box-container h2{
+            font-size: 12px;
+            text-align: center;
+           
+        }
+        #home .box-container p{
+            text-align: center;
+            font-size: 11px;
+        }
+       
+        #home .box-container{
+           margin-top: 30%;
+            height: 80%;
+            width: 60%;
+        }
+        #home{
+            width: 120%;
+        }
+       
+        #home .box-container .home-btn{
+            display: block;
+        } 
+        .home-btn{
+            display: block;
+        }
+        #home h4{
+            font-size: 16px;
+        }
+        #home .box-container h1{
+            font-size: 10px;
+            text-align:center;
+            margin-left: 7%;
+            padding-right: 0;
+        }
+        #home .box-container i{
+            font-size: 9px;
+            margin-right: 5%;
+            margin-left: 5%;
+            text-align:center;
+        }
+        #home .box-container h3{
+            font-size: 10px;
+            color:white;
+        }
+      
+        #home .box-container p{
+            font-size: 10px;
+            color:rgb(255, 255, 255);
+            line-height: 1;
+            text-align:center;
+        }
+        #home .box-container h2{
+            font-size: 13px;
+        }
+        .paiements h1{
+            font-size: 8px; 
+            padding-left: 12%;
+            margin-left: 0;
+        }
+        .paiements i{
+            font-size: 9px; 
+        }
+        #services .btn-search-home-btn{
+            display: block;
+            margin-right:17%;
+            font-size: 6px;
+            text-align:center;
+         }
+    
+        #services {
+            margin-left: 15%;
+            width: 70%;  
+        }
+        #services p{
+            font-size: 12px;
+        }
+        #nos-services .box-container{
+            width: 90%;
+            margin-left: 5%;
+        }
+        #nos-services .box-container .box h3{
+            font-size: 12px; 
+        }
+        #nos-services .box-container .box {
+            height: 50%;
+            width: 100%;
+        }
+        #nos-services .box-container i{
+            font-size: 13px;
+        }
+        #nos-services .box-container p{
+            text-align:center;
+           
+        }
+        #nos-tarifs .box-container h4{
+            font-size: 15px;
+        }
+        #nos-tarifs .box-container{
+            width: 100%;
+            margin-left: 15%;
+        }
+        #nos-tarifs .box-container p{
+            font-size: 8px;
+        }
+        #nos-services .text{
+            font-size: 14px;
+        }
+        #nos-services .column{
+          width: 100%;
+          margin-left: 10%;
+        }
+        #contact{
+        width: 100%;
+        height: 100%;
+       }
+        #contact form{
+          height: 45%;
+          width: 100%;
+          margin-left: 10% ;
+        }
+        #contact .btn-search{
+            display: block;
+            font-size: 13px;
+            text-align: center;
+            background-color: #33aaa8;
+            padding-left: 20px;
+            margin-left: 80px  ;
+            margin-right: 60px  ;
+        }
+        #contact .btn-search:hover{
+            transform: scale(0.9);
+            color: #065763;
+        }
+        #contact h4{
+            font-size: 9px;
+            display: inline;
+           
+        }
+        #contact p{
+            font-size: 14px;
+            display: flex;
+        }
+        #contact.left{
+            margin-bottom: 40%;
+        }
+        #contact iframe {
+            height: 60%;
+            width: 100%;
+            margin-left: 12%;
+        }
+        #fonctionnement .box-container{
+            width: 90%;
+            height: 90%;
+            margin-left: 13%;
+        }
+        #fonctionnement .box-container h3{
+            font-size: 10px;
+        }
+        #fonctionnement h4{
+            font-size: 15px;
+            color: #ffffff;
+            margin-top: 10%;
+        }
+        #fonctionnement h3{
+            font-size: 15px;
+            padding-right: 10%;
+            color: #1fabc0;
+        }
+        #fonctionnement h5{
+            font-size: 12px;
+            color: #ffffff;
+            margin: auto;
+            margin-bottom: 3%;
+            padding-left: 10%;
+        }
+        #fonctionnement  img {
+            height: 13%;
+            width: 20%;
+        }
+        #fonctionnement .box-container .box{
+            height: 40%;
+        }
+        #location .left p{
+            font-size: 12px;
+        }
+       
+        #location .left{
+            width: 80%;
+            height: 100%;
+            margin-left:18%;
+        }
+        #location .left h2{
+            font-size: 12px;
+            text-align: center;
+            padding-left: 20%;
+        }
+       
+        #location .container{
+            width: 100%;
+            margin-right: 2%;
+        }
+        #location .left h{
+            font-size: 12px;
+            text-align: start;
+            padding-left: 20%;
+        }
+    
+        #prix .btn-search{
+           font-size: 8px;
+        }
+       
+        #à-propos .box-container {
+            height:100% ;
+            width:100% ;
+            gap: 5px;
+            margin-bottom: 40px;
+            margin-left: 20%;
+        }
+        #à-propos .box{
+            height:100% ;
+            width:100% ;
+            display:grid;
+        }
+        #à-propos .box  h2{
+            font-size: 8px;
+         
+        }
+        #à-propos .box p{
+            font-size: 9px;
+            
+        }
+        #à-propos .box-container:hover{
+            transform: scale(1.1);
+        }
+        #à-propos .box-container .box {
+            width: 100%;
+            height: 100%;
+            font-size: 8px;
+          
+        }
+      
+        #à-propos h5{
+            font-size: 5px;
+        }
+        #à-propos h4{
+            font-size: 5px;
+           ;
+        }
+        #à-propos iframe{
+              width: 90%;
+             
+        }
+        #à-propos h3 {
+            font-size: 6px;
+            margin-right:20px ;
+        }
+        #à-propos  i{
+            font-size: 15px;
+        }
+        #à-propos form{
+            width: 100%;
+            margin-right: 27%; 
+        }
+        #à-propos .left-right{
+            transform: scale(1.1);
+            border: 2px solid #042424;
+            color: transparent;
+            border-radius: 20px;
+            margin-left: 15%;
+            width: 120%;
+        }
+      
+        #à-propos .left-right i{
+            font-size: 5px;
+            margin-left: 0;
+            padding-left: 0;
+            margin-right: 2px;
+            padding-right: 0;
+        }
+        #à-propos .left-right .right h4 {
+            font-size: 6px;
+        }
+        #à-propos .left-right .right h5 {
+            font-size: 8px;
+        }
+        #à-propos .left-right .right a{
+            font-size: 5px;
+            margin-right: 14%;
+        }
+       
+        #prix .column{
+            width: 100%;
+        }
+        #prix .column .text{
+            font-size: 14px;
+        }
+    
+        #prix .column .counter{
+            font-size: 12px;
+        }
+    
+        #galerie .container{
+            width: 100%;
+            margin-left: 15%;
+        }
+        #ajouter th{
+            font-size: 7px;
+        }
+        #ajouter tr{
+            font-size: 6px;
+        }
+        #ajouter td{
+            font-size: 6px;
+        }
+        #ajouter form{
+            width:120%;
+        }
+        #ajouter a{
+            font-size: 6px;
+            padding: 2px 5px;
+        }
+        footer{
+            width: 120%;
+            background-color: #333;
+            padding: 30px 0;
+            font-size: 12px;
+            color: #fefefe;
+        }
+        .contenu-footer{
+            width: 80%;
+            height: 60%;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            font-size: 12px;
+            padding: 30px 0 px;
+            text-decoration: none;
+        }
+       
+        footer .media li{
+            font-size: 10px;
+            color:#333;
+            padding-top: 3%;
+            padding-left: 1%; 
+        }
+       
+        footer .media li{
+            font-size: 10px;
+            color:#333;
+            padding-top: 3%; 
+        }
+        footer p{
+            font-size: 10px; 
+            padding-left:10%;
+        }
+        footer h5{
+           font-size:10px; 
+           margin-left:53%;
+        }
+        footer h4{
+            margin-top: 5px;
+            line-height: 2;
+            font-size: 8px;
+            display: flex;
+            text-align: center;
+            margin-left:20%;
+        }
+        footer a{
+            display:block ;
+            font-size: 8px;
+            margin-left: 45%;
+        }
+        footer i{
+            font-size: 12px;
+            margin-right: 11%;
+        }
+        footer  h3 {
+            margin-right: 30%; 
+        }
+        footer span{
+            font-size:12px ;
+           
+        }
+        .text-banniere p{
+            font-size: 10px;
+          
+        }
+        .button-banniere{
+            padding-top: 15px;
+        }
+        .button-banniere a{
+            border: solid 1px rgba(0,0,0,0.2);
+            display: block;
+            background: rgb(191, 98, 98);
+            border-radius: 9px;
+            color: white;
+            font-size: 8px;
+        }
+        header .menu.responsive li{
+            margin: 10px;
+            width:120px;
+            font-size: 11px;
+        }
+      
+    }
+   
+
+
+
+
 
 

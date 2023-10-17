@@ -1,6 +1,19 @@
 
 <?php
 
+if (empty($_POST["services"])) {
+    die("Le service est obligatoire");
+}
+if (empty($_POST["tarifs"])) {
+    die("La tarif est obligatoire");
+}
+if (empty($_POST["machines"])) {
+    die("La machine est obligatoire");
+}
+if (($_POST["tarifs"])< 0){
+    die("tarif doit être superieur à 0");
+}
+
 mysqli_report(MYSQLI_REPORT_STRICT | MYSQLI_REPORT_ALL);
 //var_dump($_POST);
 
