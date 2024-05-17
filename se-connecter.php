@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             
             session_regenerate_id();
             
-            //$_SESSION["user_id"] = $user["id"];
+            
             $_SESSION["user"] = $user;
             if ($user["role_id"] === "1")
             {
@@ -79,12 +79,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
              </div>
              <div class="right">
             <p>Se connecter à Cleanlav :</p><br><br>
-            <button ><i class="fa-brands fa-google"></i> <br><a href="./s'inscrire.php"> Se Connecter avec Google</a> </button><br>
+            <button ><i class="fa-brands fa-google"></i> <br><a href="./s'inscrire.php"> Se Connecter avec Google</a>&nbsp;&nbsp;&nbsp; </button><br>
             <button><i class="fa-brands fa-facebook"></i> <br><a href="./s'inscrire.php">Se Connecter avec Facebook</a> </button>
           </div>
         </div>
-        <button> Se Connecter </button> <br>
-        <button> <a href="./s'inscrire.php">&nbsp;&nbsp;&nbsp;&nbsp;S'inscrire&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>   </button>
+        <button>&nbsp;&nbsp;&nbsp; Se Connecter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button> <br><br> <button> <a href="mot-de-passe-oublié.php">Mot-de-passe-oublié?</a>&nbsp;&nbsp;&nbsp;&nbsp;</button> <br> <br>
+        <button> <a href="./s'inscrire.php">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S'inscrire&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>   </button>
     </form>
     </section>
     <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br>

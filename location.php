@@ -89,7 +89,7 @@ if(isset($_GET['accepte-cookie'])){
 
                   <div class="column">
                     <div class="box-conter">
-                      <div class="text" >Tarif jourée  &nbsp;&nbsp;</div><br><br><br>
+                      <div class="text" >   Tarif jourée  &nbsp;&nbsp;</div><br><br><br>
                       <div class="counter">40</div>
                       <div class="text">€</div>  
                     </div>
@@ -97,9 +97,9 @@ if(isset($_GET['accepte-cookie'])){
 
                   <div class="column">
                     <div class="box-conter">
-                      <div class="text"> Pastilles<br> de détergent</div>
+                      <div class="text"> Pastilles<br> de détergent </div>
                       <div class="counter">5</div>
-                      <div class="text">&nbsp;&nbsp;&nbsp; € &nbsp;&nbsp;&nbsp;( les 3 )</div>
+                      <div class="text">&nbsp;&nbsp;&nbsp; €&nbsp;&nbsp;( les 3 )&nbsp;</div>
                     </div>
                   </div>
                 </div>
