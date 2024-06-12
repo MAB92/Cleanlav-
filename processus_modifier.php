@@ -38,7 +38,7 @@ if ($stmt->execute()) {
  }
  catch(Exception $e)
  {
-   //We will catch ANY exception that the try block will throw
- //var_dump($e);
+   
+   //var_dump($e);
  }
 ?>

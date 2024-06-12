@@ -6,7 +6,7 @@ if (isset($_POST['_csrf_token'])) {//si _csrf_token est defini dans $_POST
     $tokenFormulaire = $_POST['_csrf_token'];
     $tokenSession = $_SESSION["_csrf_token"];
     if($tokenFormulaire != $tokenSession){
-        header('location:./ajouter_tarifs.php?error=csrf');
+        header('location:./ajouter_tarifs.php');
         exit;
     }
 }
@@ -34,7 +34,7 @@ mysqli_report(MYSQLI_REPORT_STRICT | MYSQLI_REPORT_ALL);
 //var_dump($_POST);
 
 $mysqli = require __DIR__ . "/database.php";
-//ajouter à tarif 
+//ajouter à la table  tarif 
 $sql = "INSERT INTO tarif (tarif, service , type_id, machines)
         VALUES (?, ?, ? ,?)";
         
@@ -45,7 +45,7 @@ if ( ! $stmt->prepare($sql)) {
 }
 //var_dump($_POST["services"]);
 try{
-    //place code here that could potentially throw an exception
+    
     $stmt->bind_param("ssds",$_POST["tarifs"] , $_POST["services"] , $_POST["type_id"]  ,$_POST["machines"]);
                   
 if ($stmt->execute()) {
@@ -55,7 +55,7 @@ if ($stmt->execute()) {
  }
  catch(Exception $e)
  {
-   //We will catch ANY exception that the try block will throw
+   
  //var_dump($e);
  }
 ?>

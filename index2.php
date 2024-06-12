@@ -1,22 +1,15 @@
 <?php
-session_start();
-if (isset($_SESSION["user"])) {
-    
-   // $mysqli = require __DIR__ . "/database.php";
-    
-   // $sql = "SELECT * FROM user
-           // WHERE id = {$_SESSION["user_id"]}";
-            
-   // $result = $mysqli->query($sql);
-    
+  session_start();
+
+  if (isset($_SESSION["user"])) {
     $user = $_SESSION["user"];
-}
+  }
 ?>
 <?php
-if(isset($_GET['accepte-cookie'])){
-  setcookie('accepte-cookie', true , time() + 1365*24*3600 , $_SERVER['HTTP_HOST'], );
-  header('location:./');
-}
+  if(isset($_GET['accepte-cookie'])){
+    setcookie('accepte-cookie', true , time() + 1365*24*3600 , $_SERVER['HTTP_HOST'], );
+    header('location:./');
+  }
 ?>
 
 <!DOCTYPE html>
@@ -34,18 +27,37 @@ if(isset($_GET['accepte-cookie'])){
       <div class="logo">
         <a href="index.php"><span>Clean</span>lav'</a>
       </div> 
-       <ul class="menu">
-          <li><a href="index.php">ACCUEIL</a></li>
-            <li><a href="services et tarifs.php">SERVICES ET TARIFS</a></li>
-            <li><a href="fonctionnement.php">FONCTIONNEMENT</a></li>
-            <li><a href="location.php">LOCATION</a></li>
-            <li><a href="contact.php">CONTACT</a></li>
-            <li><a href="galerie.php">GALERIE</a></li>
-            <li><a href="à-propos.php">À PROPOS</a></li>
-        </ul> 
+      <ul class="menu">
+      
+      <?php
+        if(isset($_SESSION['user']) || ( $_SESSION['role_id'] = 1)){
+          ?>
+              <li><a href="index.php">ACCUEIL</a></li>
+              <li><a href="services et tarifs.php">SERVICES ET TARIFS</a></li>
+              <li><a href="fonctionnement.php">FONCTIONNEMENT</a></li>
+              <li><a href="location.php">LOCATION</a></li>
+              <li><a href="contact.php">CONTACT</a></li>
+              <li><a href="galerie.php">GALERIE</a></li>
+              <li><a href="à-propos.php">À PROPOS</a></li>
+              <li><a href="listes_tarifs.php">ADMINISTRATEUR</a></li>
+          <?php
+          }else{
+            ?>
+              <li><a href="index.php">ACCUEIL</a></li>
+              <li><a href="services et tarifs.php">SERVICES ET TARIFS</a></li>
+              <li><a href="fonctionnement.php">FONCTIONNEMENT</a></li>
+              <li><a href="location.php">LOCATION</a></li>
+              <li><a href="contact.php">CONTACT</a></li>
+              <li><a href="galerie.php">GALERIE</a></li>
+              <li><a href="à-propos.php">À PROPOS</a></li>
+            <?php
+          }
+      ?> 
+    </ul>
       <a href="se-deconnecter.php"" class="btn-search">Se Déconnecter</a>
       <div class="responsive-menu"></div>
    </header>
+   
    <section id="contact">
          <h1 class="title"> Home :</h1>
     <?php if (isset($user)): ?>

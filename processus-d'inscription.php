@@ -23,6 +23,7 @@ if ( ! preg_match("/[0-9]/", $_POST["password"])) {
 if ($_POST["password"] !== $_POST["password_confirmation"]) {
     die("Les mots de passe doivent correspondre");
 }
+
 //email existant
 
 session_start();
@@ -41,7 +42,6 @@ if (mysqli_num_rows($check_email_run) > 0)
 $password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
 $mysqli = require __DIR__ . "/database.php";
-
 
 
 $sql = "INSERT INTO user (name, email, password_hash , role_id)

@@ -146,62 +146,25 @@ if(isset($_GET['accepte-cookie'])){
         </section>
       <section id="tarifs">
         <div id="nos-tarifs">
-           <h1 class="title"> NOS  TARIFS :</h1>
-           <div class="box-container">
-            <?php foreach($types as $type):?>
-              <div class="box" data-aos="zoom-in-up" data-aos-delay="750">
-              <h4><?php echo $type["nom"];?></h4>
-              <?php foreach($tarifs as $tarif):?>
-                <?php if($tarif['type_id'] === $type['id']):?>
-                  <p>
-                 <?php echo $tarif["service"];?>  <span><?php echo $tarif ["tarif"];?>  &nbsp;    € &nbsp;&nbsp;( La dose )</span>       
-                <p> <?php echo $tarif["machines"];?></p>  
-                </p>
-                <?php endif;?>
+           <h1 class="title"> NOS TARIFS ET  PRODUITS :</h1>
+            <div class="box-container">
+              <?php foreach($types as $type):?>
+                <div class="box" data-aos="zoom-in-up" data-aos-delay="750">
+                  <h4><?php echo $type["nom"];?></h4>
+                  <?php foreach($tarifs as $tarif):?>
+                    <?php if($tarif['type_id'] === $type['id']):?>
+                      <p>
+                    <?php echo $tarif["service"];?>  <span><?php echo $tarif ["tarif"];?>  &nbsp;    € &nbsp;&nbsp;( La dose )</span>       
+                      <p> <?php echo $tarif["machines"];?></p>  
+                      </p>
+                    <?php endif;?>
+                  <?php endforeach;?>  
+                </div>
               <?php endforeach;?>
-             
-           </div>
-         <?php endforeach;?>
-
-           <!-- <div class="box" data-aos="zoom-in-up" data-aos-delay="750">
-              <h4>laver :</h4>
-              <p>
-                 MACHINES&nbsp;&nbsp;&nbsp; 6.5 KG &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>4.20 €</span>       
-                <p> N°10&nbsp;N°11</p>  
-              </p>
-               <p> 
-                 MACHINES&nbsp;&nbsp;&nbsp;  9  KG &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> 5 € </span>     
-                 <p>N°12&nbsp;N°13&nbsp;N° 14 &nbsp;N°15 &nbsp;N°16</p> 
-              </p>
-              <p>
-                 MACHINES&nbsp;&nbsp;&nbsp; 20KG&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>11 € </span>    
-                 <p>N°17 &nbsp;N°18</p> 
-              </p>
-           </div>
-           <div class="box" data-aos="zoom-in-up" data-aos-delay="750">
-           
-              <h4>SECHAGE :</h4>
-              <p>
-                SECHOIRS&nbsp;&nbsp;&nbsp;&nbsp;  14  KG&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span> 1.20 € </span>
-                <p>N°19 &nbsp;N°20&nbsp; N°21&nbsp; N°22</p> 
-              </p>
-           </div>
-           <div class="box" data-aos="zoom-in-up" data-aos-delay="750">
-              <h4>PRODUITS :</h4>    
-              <p>
-                 <p> DESINFECTANT <span>1 € (La dose)</span></p>
-                <p> N°23</p> 
-                <p> LESSIVE  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;    <span>1 € (La dose)</span> </p>                  
-                 <p>N°24 </p>  
-                 <p> DETACHANT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <span>1 € (La dose)</span> </p>                  
-                 <p>N°25</p>
-                 <p> ADOUCISSANT &nbsp;&nbsp; <span>1 € (La dose)</span>  </p>                 
-                 <p>N°26</p>
-              </p> -->
-           </div>
-           </div>
+            </div>
+          </div>
         </div>
-        </section>
+      </section>
   
      <footer>
       <div class="contenu-footer">

@@ -15,6 +15,7 @@ if(isset($_GET['accepte-cookie'])){
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+   
    <header>
       <div class="logo">
         <a href="à-propos.php"><span>Clean</span>lav'</a>
@@ -47,7 +48,7 @@ if(isset($_GET['accepte-cookie'])){
       </section>
       <section>
        <div class="paiements">
-        <h1>TOUS PAIEMENTS ACCEPTES <i class="fa-sharp fa-solid fa-credit-card"></i>  <i class="fa-brands fa-cc-visa"></i><i class="fa-brands fa-cc-mastercard"></i> <i class="fa-sharp fa-solid fa-coins"></i> <i class="fa-solid fa-money-bill-1"></i>  </h1>
+        <h1>TOUS PAIEMENTS ACCEPTES <i class="fa-sharp fa-solid fa-credit-card"></i> <i class="fa-brands fa-cc-visa"></i><i class="fa-brands fa-cc-mastercard"></i> <i class="fa-sharp fa-solid fa-coins"></i> <i class="fa-solid fa-money-bill-1"></i>  </h1>
        </div>
       </section>
       

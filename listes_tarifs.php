@@ -12,12 +12,18 @@
 <?php
   $mysqli = require __DIR__ . "/database.php";
 
-    //recuperer toutes les tarif et tarif type de la bdd 
-
   $sql ="select t.*, tt.nom from tarif t join tarif_type tt on tt.id=t.type_id" ;
   $result = $mysqli->query($sql);
   $tarifs=$result -> fetch_all(MYSQLI_ASSOC);
- // var_dump($tarifs) ;
+
+?>
+<?php
+  $mysqli = require __DIR__ . "/database.php";
+
+  $sql ="select * FROM user " ;
+  $result = $mysqli->query($sql);
+  $users = $result -> fetch_all(MYSQLI_ASSOC);
+
 ?>
 
 
@@ -33,7 +39,7 @@ if(isset($_GET['accepte-cookie'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
-    <title>CLEANLAV' Val-De-Reuil</title>
+    <title>LISTE DES TARIFS</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="lightbox.css">
@@ -60,7 +66,7 @@ if(isset($_GET['accepte-cookie'])){
       <div class="responsive-menu"></div>
    </header>
    <section id="ajouter">
-         <h1 class="title" >Ajouter tarifs :</h1> 
+         <h1 class="title" >Ajouter services :</h1> 
          <a href="ajouter_tarifs.php">Ajouter tarifs</a>
          <a href="se-deconnecter.php" ">Se Déconnecter</a>
          <form>
@@ -80,8 +86,41 @@ if(isset($_GET['accepte-cookie'])){
                     <td><?php echo htmlspecialchars($tarif["machines"]);?></td>
                     <td><?php echo $tarif["nom"];?></td>
                     <td>
-                       <a href="modifier.php?id=<?php echo $tarif['id']?>">Modifer</a>
-                       <a href="supprimer.php?id=<?php echo $tarif['id'];?>">Supprimer</a>
+                       <a href="modifier.php?id=<?php echo $tarif['id'];?>">Modifer</a>
+                       <a href="supprimer.php?id=<?php echo $tarif['id'];?>"
+                         onclick="return confirm('Voulez vous vraiment supprimer =  <?php echo $tarif['service'];?>')" >Supprimer
+                       </a>
+                    </td>
+                </tr>
+                <?php endforeach;?>
+            </table>
+          </form>
+   </section>
+
+   <section id="ajouter">
+         <h1 class="title" >users:</h1> 
+         <a href="s'inscrire.php">Ajouter users</a>
+        
+         <form>
+            <table> 
+                <tr>
+                    <th> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ID</th>
+                    <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NOM</th>
+                    <th>&nbsp;&nbsp;&nbsp;EMAILS</th><br><br><br>
+                    <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ACTIONS</th>
+                </tr>
+
+                <?php foreach($users as $user):?>
+                <tr>
+                    <td><?php echo htmlspecialchars($user["id"]);?></td> 
+                    <td><?php echo htmlspecialchars($user["name"]);?></td>
+                    <td><?php echo htmlspecialchars($user["email"]);?></td>
+                  
+                    <td>
+                       
+                       <a href="supprimer_user.php?id=<?php echo $user['id'];?>"
+                         onclick="return confirm('Voulez vous vraiment supprimer = <?php echo $user['id'];?>')" >Supprimer
+                       </a>
                     </td>
                 </tr>
                 <?php endforeach;?>

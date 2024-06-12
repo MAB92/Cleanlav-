@@ -69,10 +69,7 @@ if(isset($_GET['accepte-cookie'])){
                   <label>type_id :</label>
                   <select name="type_id" id="type_id" required>
                         <?php foreach ($types as $type): ?>
-                            <option 
-                            value="<?php echo $type['id'] ?>" 
-                            <?php if($type['id'] == $tarif['type_id']) echo "selected"?>
-                            ><?php echo $type['nom'] ?></option>
+                          <option value="<?php echo $type['id'] ?>" <?php if($type['id'] == $tarif['type_id']) echo "selected"?> ><?php echo $type['nom'] ?></option>
                         <?php endforeach; ?> 
                   </select>
                   <input type="hidden" name="id" value="<?php echo $tarif['id']?>">

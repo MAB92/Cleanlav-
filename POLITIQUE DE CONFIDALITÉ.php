@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="./fichiers/politique de confidentialité.pdf">jjjjjj</a>
+    <a href="./fichiers/politique de confidentialité.pdf">PDG</a>
 </body>
 </html>

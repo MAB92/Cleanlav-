@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <body>
    <header>
       <div class="logo">
-        <a href="index.php"><span>Clean</span>lav'</a>[]
+        <a href="index.php"><span>Clean</span>lav'</a>
       </div> 
       <ul class="menu">
       <li><a href="index.php">ACCUEIL</a></li>
@@ -83,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <button><i class="fa-brands fa-facebook"></i> <br><a href="./s'inscrire.php">Se Connecter avec Facebook</a> </button>
           </div>
         </div>
-        <button>&nbsp;&nbsp;&nbsp; Se Connecter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button> <br><br> <button> <a href="mot-de-passe-oublié.php">Mot-de-passe-oublié?</a>&nbsp;&nbsp;&nbsp;&nbsp;</button> <br> <br>
+        <button>&nbsp;&nbsp;&nbsp; Se Connecter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><br><br>
         <button> <a href="./s'inscrire.php">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S'inscrire&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>   </button>
     </form>
     </section>
@@ -118,7 +118,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <h4><i class="fa-sharp fa-solid fa-location-dot"></i> 31 PLACE DES 4 SAISONS <br>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  27100 VAL DE REUIL <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 07_67_74_06_52</h4>
           </div>
         </div>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Réaliser par  Mr&nbsp;.MAB dev | Copyright © Cleanlav' 2023 .</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Réaliser par  Mr&nbsp;MAB dev | Copyright © Cleanlav' 2023 .</p>
      </footer>
      <?php 
        if (!isset($_COOKIE['accepte-cookie'])){

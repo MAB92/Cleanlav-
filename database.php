@@ -1,3 +1,8 @@
+
+<?php
+$pdo = new PDO('mysql:host=localhost;dbname=cleanlav','root','');
+?>
+
 <?php
 
 $host = "localhost";
